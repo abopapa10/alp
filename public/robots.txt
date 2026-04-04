@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host
+Host: https://www.ahmetalparslansancar.com
+
+# Sitemaps
+Sitemap: https://www.ahmetalparslansancar.com/sitemap.xml
