@@ -9,13 +9,12 @@ import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 /**
- * Türkçe: latin + latin-ext. Yalnızca kullanılan ağırlıklar (indirme boyutu).
- * Aynı kökene preconnect gerekmez (gereksiz kritik yol).
+ * Türkçe: latin + latin-ext. display: optional — CLS azaltma (yedek font metrikleri).
  */
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
-  display: "swap",
+  display: "optional",
   weight: ["400", "600", "700"],
   preload: true,
   adjustFontFallback: true,
@@ -25,7 +24,7 @@ const poppins = Poppins({
   weight: ["600", "700"],
   subsets: ["latin", "latin-ext"],
   variable: "--font-poppins",
-  display: "swap",
+  display: "optional",
   preload: true,
   adjustFontFallback: true,
 });

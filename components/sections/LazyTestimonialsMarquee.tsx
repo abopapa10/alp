@@ -16,7 +16,7 @@ const Dyn = dynamic(
     ssr: false,
     loading: () => (
       <div
-        className="h-96 w-full max-w-6xl mx-auto shrink-0 bg-slate-100 animate-pulse"
+        className="h-64 w-full max-w-6xl mx-auto shrink-0 animate-pulse bg-gray-100"
         aria-hidden
       />
     ),

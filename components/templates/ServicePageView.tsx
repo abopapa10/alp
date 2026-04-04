@@ -23,16 +23,14 @@ export function ServicePageView({ slug }: Props) {
         { label: label },
       ]}
     >
-      <div>
+      <section className="mt-8 space-y-8" aria-label="Hizmet detayları">
         {data.sections.map((s) => (
-          <section key={s.heading} className="mt-8 first:mt-0">
-            <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">
-              {s.heading}
-            </h2>
+          <section key={s.heading}>
+            <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">{s.heading}</h2>
             <p className="mt-3 text-slate-700 leading-relaxed">{s.body}</p>
           </section>
         ))}
-      </div>
+      </section>
     </ServiceLayout>
   );
 }

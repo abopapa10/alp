@@ -18,38 +18,34 @@ type Props = {
   children: ReactNode;
 };
 
-export function ServiceLayout({
-  title,
-  description,
-  breadcrumb,
-  canonicalPath,
-  children,
-}: Props) {
+export function ServiceLayout({ title, description, breadcrumb, canonicalPath, children }: Props) {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumb} path={canonicalPath} />
       <article className="bg-white">
         <div className="mx-auto max-w-6xl px-6 py-8 md:px-4 md:py-12">
           <Breadcrumb items={breadcrumb} />
-          <div className="mt-6 grid grid-cols-1 items-start gap-8 md:grid-cols-[minmax(0,280px)_1fr] md:gap-10 lg:gap-12">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl border border-slate-200/80 bg-brand-sky shadow-md shadow-slate-900/10 md:mx-0 md:max-w-none">
+
+          <header className="mt-6 grid grid-cols-1 items-start gap-8 md:grid-cols-[minmax(0,280px)_1fr] md:gap-10 lg:gap-12">
+            <figure className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl border border-slate-200/80 bg-brand-sky shadow-md shadow-slate-900/10 md:mx-0 md:max-w-none">
               <Image
                 src={servicePortrait}
                 alt={`${siteConfig.name} — psikolog`}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 800px"
                 className="object-cover object-top"
-                loading="lazy"
               />
-            </div>
+            </figure>
             <div className="min-w-0">
-              <h1 className="font-display text-3xl font-bold text-brand-navy md:text-4xl">
-                {title}
-              </h1>
+              <h1 className="font-display text-3xl font-bold text-brand-navy md:text-4xl">{title}</h1>
               <p className="mt-4 max-w-3xl text-lg text-slate-800">{description}</p>
             </div>
-          </div>
-          <div className="mt-8">{children}</div>
+          </header>
+
+          {children}
+
           <section
             className="mt-12 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/90 to-white p-6 shadow-md md:p-8"
             aria-labelledby="service-cta-heading"

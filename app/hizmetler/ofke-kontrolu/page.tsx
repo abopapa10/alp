@@ -1,7 +1,10 @@
+import type { Metadata } from "next";
 import { ServicePageView } from "@/components/templates/ServicePageView";
-import { servicePageMetadata } from "@/lib/service-metadata";
+import { generateServicePageMetadata } from "@/lib/service-metadata";
 
-export const metadata = servicePageMetadata("ofke-kontrolu");
+export async function generateMetadata(): Promise<Metadata> {
+  return generateServicePageMetadata("ofke-kontrolu");
+}
 
 export default function OfkeKontroluPage() {
   return <ServicePageView slug="ofke-kontrolu" />;
