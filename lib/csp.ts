@@ -7,18 +7,12 @@ export function buildContentSecurityPolicy(): string {
     "default-src 'self'",
     "base-uri 'self'",
     "object-src 'none'",
-    /**
-     * strict-dynamic + trusted-types ile script enjeksiyon yüzeyi daraltılır.
-     * Not: GTM/Ads için gerekli origin izinleri korunur.
-     */
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://*.google.com",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://*.google.com",
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google.com https://googleads.g.doubleclick.net https://www.google.com.tr https://*.google.com.tr",
     "font-src 'self' data:",
     "connect-src 'self' https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googletagmanager.com https://region1.google-analytics.com https://www.google.com https://*.google.com https://www.google.com.tr https://*.google.com.tr https://*.googleapis.com https://*.gstatic.com",
     "frame-src 'self' https://www.googletagmanager.com https://td.doubleclick.net https://www.google.com https://*.google.com https://maps.google.com https://www.google.com/maps",
-    "require-trusted-types-for 'script'",
-    "trusted-types nextjs",
     "worker-src 'self' blob:",
     "manifest-src 'self'",
     "frame-ancestors 'none'",
