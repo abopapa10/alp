@@ -99,7 +99,7 @@ gtag('config', 'AW-17606132701');`}
 });`}
         </Script>
         <Script id="google-ads-location-conversion" strategy="afterInteractive">
-          {`function gtag_report_conversion(url, target) {
+          {`function gtag_report_location_conversion(url, target) {
   var redirected = false;
   var callback = function () {
     if (redirected) return;
@@ -127,7 +127,7 @@ gtag('config', 'AW-17606132701');`}
   return false;
 }
 
-window.gtag_report_conversion = gtag_report_conversion;
+window.gtag_report_location_conversion = gtag_report_location_conversion;
 
 document.addEventListener('click', function (event) {
   var link = event.target && event.target.closest
@@ -138,8 +138,67 @@ document.addEventListener('click', function (event) {
   event.preventDefault();
   var href = link.getAttribute('href') || undefined;
   var target = link.getAttribute('target') || undefined;
-  gtag_report_conversion(href, target);
+  gtag_report_location_conversion(href, target);
 });`}
+        </Script>
+        <Script id="google-ads-review-reading-conversion" strategy="afterInteractive">
+          {`function gtag_report_conversion(url, target) {
+  var redirected = false;
+  var callback = function () {
+    if (redirected) return;
+    redirected = true;
+    if (typeof url !== 'undefined' && url) {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      } else {
+        window.location.href = url;
+      }
+    }
+  };
+
+  if (typeof gtag !== 'function') {
+    if (url) callback();
+    return false;
+  }
+
+  gtag('event', 'conversion', {
+    send_to: 'AW-17606132701/Pz3eCObm_ZYcEN2HoctB',
+    event_callback: url ? callback : undefined,
+    event_timeout: 1200
+  });
+  if (url) {
+    setTimeout(callback, 1300);
+  }
+
+  return false;
+}
+
+window.gtag_report_conversion = gtag_report_conversion;
+
+document.addEventListener('click', function (event) {
+  var el = event.target && event.target.closest
+    ? event.target.closest('[data-ads-review-conversion="true"]')
+    : null;
+  if (!el || typeof gtag !== 'function') return;
+
+  var tag = el.tagName && el.tagName.toLowerCase();
+  if (tag === 'a') {
+    event.preventDefault();
+    var href = el.getAttribute('href') || undefined;
+    var target = el.getAttribute('target') || undefined;
+    gtag_report_conversion(href, target);
+    return;
+  }
+
+  if (el.getAttribute('aria-expanded') === 'true') {
+    return;
+  }
+
+  gtag('event', 'conversion', {
+    send_to: 'AW-17606132701/Pz3eCObm_ZYcEN2HoctB',
+    event_timeout: 1200
+  });
+}, true);`}
         </Script>
         <a
           href="#main-content"

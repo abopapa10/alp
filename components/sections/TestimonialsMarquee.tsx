@@ -97,6 +97,7 @@ function ReviewCard({ r }: { r: (typeof googleReviews)[number] }) {
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-label={open ? `${r.name} yorumunu kısalt` : `${r.name} yorumunun tamamını göster`}
+              data-ads-review-conversion={open ? undefined : "true"}
               className="mt-2 self-start text-left text-sm font-semibold text-brand-navy hover:text-brand-accent hover:underline"
             >
               {open ? "Daha az göster" : "Devamını oku"}
@@ -155,6 +156,7 @@ export function TestimonialsMarquee({
             href={googleReviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
+            data-ads-review-conversion="true"
             aria-label="Google işletme profilindeki tüm yorumları yeni sekmede aç"
             className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg border-2 border-brand-navy bg-white px-6 py-3 text-sm font-semibold text-brand-navy shadow-sm transition-colors hover:bg-brand-sky"
           >
