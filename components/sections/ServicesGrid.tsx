@@ -37,11 +37,11 @@ export function ServicesGrid({ items, id }: { items: ServiceItem[]; id?: string 
               >
                 <Link
                   href={`/hizmetler/${s.slug}`}
-                  className="group flex h-full min-h-[260px] flex-col items-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-200 hover:border-brand-accent hover:shadow-lg md:min-h-0 md:items-stretch md:text-left"
+                  className="group flex h-full min-h-[260px] flex-col items-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-200 hover:border-orange-400 hover:shadow-lg md:min-h-0 md:items-stretch md:text-left"
                 >
-                  <span className="flex size-11 items-center justify-center rounded-xl bg-brand-sky md:self-start">
+                  <span className="flex size-11 items-center justify-center rounded-xl bg-orange-50 md:self-start">
                     <Icon
-                      className="size-5 text-brand-accent"
+                      className="size-5 text-orange-500"
                       strokeWidth={2}
                       aria-hidden
                     />
@@ -53,7 +53,7 @@ export function ServicesGrid({ items, id }: { items: ServiceItem[]; id?: string 
                   <span className="mt-4 inline-flex min-h-11 items-center justify-center gap-1 text-sm font-semibold text-brand-accent md:justify-start">
                     Detaylı Bilgi
                     <ArrowRight
-                      className="size-4 shrink-0 text-brand-accent"
+                      className="size-4 shrink-0 text-orange-500"
                       strokeWidth={2}
                       aria-hidden
                     />

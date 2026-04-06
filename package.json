@@ -2,13 +2,7 @@
   "name": "ahmet-alparslan-sancar-psikolog",
   "version": "1.0.0",
   "private": true,
-  "browserslist": [
-    "Chrome >= 124",
-    "Edge >= 124",
-    "Firefox >= 126",
-    "Safari >= 17.4",
-    "iOS >= 17.4"
-  ],
+  "browserslist": "defaults, not ie 11, not op_mini all",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -17,7 +11,6 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "critters": "^0.0.23",
     "lucide-react": "^0.468.0",
     "next": "^15.1.0",
     "next-sitemap": "^4.2.3",
