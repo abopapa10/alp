@@ -50,6 +50,7 @@ export function Footer() {
             <p className="text-sm">{siteConfig.address.city}</p>
             <a
               href={`tel:${siteConfig.phoneTel}`}
+              data-ads-conversion="contact"
               className="mt-2 inline-block text-sm font-medium text-brand-accent hover:underline"
             >
               {siteConfig.phoneDisplay}

@@ -66,6 +66,7 @@ export function ContactSection() {
                 <Label>Telefon</Label>
                 <a
                   href={`tel:${siteConfig.phoneTel}`}
+                  data-ads-conversion="contact"
                   className="mt-2 block text-xl font-bold tracking-tight text-brand-navy hover:underline md:text-2xl lg:text-3xl"
                 >
                   {siteConfig.phoneDisplay}

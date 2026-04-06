@@ -42,6 +42,7 @@ export function HeroSection() {
               <p className="mt-4 text-sm text-slate-800">
                 <a
                   href={`tel:${siteConfig.phoneTel}`}
+                  data-ads-conversion="contact"
                   className="inline-flex min-h-11 items-center font-semibold text-brand-navy hover:underline"
                 >
                   Hemen ara
@@ -49,6 +50,7 @@ export function HeroSection() {
                 {" · "}
                 <a
                   href={siteConfig.whatsappUrl}
+                  data-ads-conversion="contact"
                   className="inline-flex min-h-11 items-center font-semibold text-brand-navy hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -17,6 +17,7 @@ export function CTAGroup({ className = "", dense }: Props) {
     >
       <a
         href={`tel:${siteConfig.phoneTel}`}
+        data-ads-conversion="contact"
         className={`inline-flex min-w-0 flex-1 basis-0 items-center justify-center gap-1.5 rounded-lg border-2 border-brand-navy bg-white font-semibold text-brand-navy transition-colors hover:bg-brand-sky sm:gap-2 ${padMobile} ${padDesktop} md:flex-initial md:basis-auto`}
       >
         <Phone className="size-4 shrink-0" aria-hidden />
@@ -24,6 +25,7 @@ export function CTAGroup({ className = "", dense }: Props) {
       </a>
       <a
         href={siteConfig.whatsappUrl}
+        data-ads-conversion="contact"
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex min-w-0 flex-1 basis-0 items-center justify-center gap-1.5 rounded-lg bg-brand-accent font-bold text-white shadow-md transition-colors hover:bg-brand-accent-hover sm:gap-2 ${padMobile} ${padDesktop} md:flex-initial md:basis-auto`}

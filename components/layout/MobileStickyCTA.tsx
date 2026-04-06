@@ -13,6 +13,7 @@ export function MobileStickyCTA() {
     >
       <a
         href={`tel:${siteConfig.phoneTel}`}
+        data-ads-conversion="contact"
         className="flex min-h-12 min-w-0 flex-1 items-center justify-center gap-2 rounded-lg border-2 border-brand-navy bg-white text-sm font-semibold text-brand-navy active:bg-brand-sky"
       >
         <Phone className="size-5 shrink-0" aria-hidden />
@@ -20,6 +21,7 @@ export function MobileStickyCTA() {
       </a>
       <a
         href={siteConfig.whatsappUrl}
+        data-ads-conversion="contact"
         target="_blank"
         rel="noopener noreferrer"
         className="flex min-h-12 min-w-0 flex-1 items-center justify-center gap-2 rounded-lg bg-brand-accent text-sm font-bold text-white active:bg-brand-accent-hover"

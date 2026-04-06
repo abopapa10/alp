@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
+import Script from "next/script";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
@@ -78,6 +79,25 @@ export default function RootLayout({
         <link rel="preload" href="/images/profil.webp" as="image" type="image/webp" />
       </head>
       <body className="min-h-screen bg-white font-sans antialiased text-slate-900">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17606132701"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-17606132701');`}
+        </Script>
+        <Script id="google-ads-conversion-clicks" strategy="afterInteractive">
+          {`document.addEventListener('click', function (event) {
+  var target = event.target && event.target.closest
+    ? event.target.closest('[data-ads-conversion="contact"]')
+    : null;
+  if (!target || typeof gtag !== 'function') return;
+  gtag('event', 'conversion', { send_to: 'AW-17606132701/uUm1CKncgpccEN2HoctB' });
+});`}
+        </Script>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-navy focus:px-4 focus:py-2 focus:text-white"
