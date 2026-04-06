@@ -75,9 +75,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={`${inter.variable} ${poppins.variable}`}>
-      <head>
-        <link rel="preload" href="/images/profil.webp" as="image" type="image/webp" />
-      </head>
+      <head />
       <body className="min-h-screen bg-white font-sans antialiased text-slate-900">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17606132701"

@@ -12,15 +12,17 @@ export function HeroSection() {
     >
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-4 md:py-20">
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-[minmax(0,280px)_1fr] md:gap-10 lg:gap-12">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl border border-slate-200/80 bg-brand-sky shadow-md shadow-slate-900/10 md:mx-0 md:max-w-none">
+          <div className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl border border-slate-200/80 bg-brand-sky shadow-md shadow-slate-900/10 md:mx-0 md:max-w-none">
             <Image
               src={heroPortrait}
               alt={`${siteConfig.name} — Beşiktaş psikolog`}
-              fill
+              width={800}
+              height={1000}
               priority
               fetchPriority="high"
+              decoding="async"
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-top"
+              className="h-auto w-full object-cover object-top"
             />
           </div>
           <div className="min-w-0 max-w-3xl">
