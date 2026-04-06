@@ -21,3 +21,11 @@ export function buildContentSecurityPolicy(): string {
   ];
   return directives.join("; ");
 }
+
+/**
+ * Trusted Types geçişi için raporlama modu.
+ * Enforce moduna geçmek için uygulama genelinde nonce/policy entegrasyonu gerekir.
+ */
+export function buildTrustedTypesReportOnlyPolicy(): string {
+  return "require-trusted-types-for 'script'; trusted-types nextjs";
+}

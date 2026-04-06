@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { buildContentSecurityPolicy } from "./lib/csp";
+import { buildContentSecurityPolicy, buildTrustedTypesReportOnlyPolicy } from "./lib/csp";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -23,6 +23,10 @@ if (isProd) {
   securityHeaders.push({
     key: "Content-Security-Policy",
     value: buildContentSecurityPolicy(),
+  });
+  securityHeaders.push({
+    key: "Content-Security-Policy-Report-Only",
+    value: buildTrustedTypesReportOnlyPolicy(),
   });
 }
 
