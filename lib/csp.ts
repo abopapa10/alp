@@ -13,6 +13,8 @@ export function buildContentSecurityPolicy(): string {
     "font-src 'self' data:",
     "connect-src 'self' https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.doubleclick.net https://*.google.com https://*.google.com.tr https://*.googleapis.com https://*.gstatic.com https://tagassistant.google.com",
     "frame-src 'self' https://*.googletagmanager.com https://*.googleadservices.com https://*.doubleclick.net https://*.google.com https://*.google.com.tr https://tagassistant.google.com",
+    "require-trusted-types-for 'script'",
+    "trusted-types nextjs",
     "worker-src 'self' blob:",
     "manifest-src 'self'",
     "frame-ancestors 'none'",
