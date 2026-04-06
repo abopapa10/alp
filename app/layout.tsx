@@ -98,6 +98,49 @@ gtag('config', 'AW-17606132701');`}
   gtag('event', 'conversion', { send_to: 'AW-17606132701/uUm1CKncgpccEN2HoctB' });
 });`}
         </Script>
+        <Script id="google-ads-location-conversion" strategy="afterInteractive">
+          {`function gtag_report_conversion(url, target) {
+  var redirected = false;
+  var callback = function () {
+    if (redirected) return;
+    redirected = true;
+    if (typeof url !== 'undefined' && url) {
+      if (target === '_blank') {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      } else {
+        window.location.href = url;
+      }
+    }
+  };
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      send_to: 'AW-17606132701/wkfmCLeAkpccEN2HoctB',
+      event_callback: callback,
+      event_timeout: 1200
+    });
+    setTimeout(callback, 1300);
+  } else {
+    callback();
+  }
+
+  return false;
+}
+
+window.gtag_report_conversion = gtag_report_conversion;
+
+document.addEventListener('click', function (event) {
+  var link = event.target && event.target.closest
+    ? event.target.closest('[data-ads-location-conversion="true"]')
+    : null;
+  if (!link) return;
+
+  event.preventDefault();
+  var href = link.getAttribute('href') || undefined;
+  var target = link.getAttribute('target') || undefined;
+  gtag_report_conversion(href, target);
+});`}
+        </Script>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-navy focus:px-4 focus:py-2 focus:text-white"

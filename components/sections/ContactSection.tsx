@@ -36,6 +36,7 @@ export function ContactSection() {
             <ContactMapEmbed />
             <a
               href={siteConfig.googleMapsPlaceUrl}
+              data-ads-location-conversion="true"
               target="_blank"
               rel="noopener noreferrer"
               className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-brand-navy shadow-sm transition-colors hover:border-slate-300 hover:bg-brand-sky/40"
@@ -76,6 +77,7 @@ export function ContactSection() {
               <div className="mt-5 space-y-3 md:mt-8">
                 <a
                   href={siteConfig.directionsUrl}
+                  data-ads-location-conversion="true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand-accent px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-accent-hover md:min-h-12 md:rounded-lg md:text-base"
