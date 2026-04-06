@@ -12,9 +12,9 @@ const config: Config = {
         brand: {
           navy: "#0f2744",
           sky: "#e8f4fc",
-          /** WCAG AA: beyaz metin için turuncu tonu koyulaştırıldı */
-          accent: "#ea580c",
-          "accent-hover": "#c2410c",
+          /** WCAG AA: metin ve buton kontrastı için koyu turuncu */
+          accent: "#9a3412",
+          "accent-hover": "#7c2d12",
         },
       },
       fontFamily: {

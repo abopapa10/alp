@@ -77,24 +77,55 @@ export default function RootLayout({
     <html lang="tr" className={`${inter.variable} ${poppins.variable}`}>
       <head />
       <body className="min-h-screen bg-white font-sans antialiased text-slate-900">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17606132701"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads-gtag" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-17606132701');`}
-        </Script>
-        <Script id="google-ads-conversion-clicks" strategy="afterInteractive">
-          {`document.addEventListener('click', function (event) {
-  var target = event.target && event.target.closest
-    ? event.target.closest('[data-ads-conversion="contact"]')
-    : null;
-  if (!target || typeof gtag !== 'function') return;
-  gtag('event', 'conversion', { send_to: 'AW-17606132701/uUm1CKncgpccEN2HoctB' });
-});`}
+        <Script id="google-ads-gtag-lazy" strategy="afterInteractive">
+          {`(function () {
+  if (window.__adsBootstrapped) return;
+  window.__adsBootstrapped = true;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+  window.gtag('js', new Date());
+
+  var loaded = false;
+  function loadAdsScript() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17606132701';
+    s.onload = function () {
+      window.gtag('config', 'AW-17606132701');
+    };
+    document.head.appendChild(s);
+  }
+
+  function onInteraction() {
+    loadAdsScript();
+    window.removeEventListener('pointerdown', onInteraction, true);
+    window.removeEventListener('touchstart', onInteraction, true);
+    window.removeEventListener('keydown', onInteraction, true);
+    window.removeEventListener('scroll', onInteraction, true);
+  }
+
+  window.addEventListener('pointerdown', onInteraction, true);
+  window.addEventListener('touchstart', onInteraction, true);
+  window.addEventListener('keydown', onInteraction, true);
+  window.addEventListener('scroll', onInteraction, true);
+
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(loadAdsScript, { timeout: 4000 });
+  } else {
+    setTimeout(loadAdsScript, 4000);
+  }
+
+  document.addEventListener('click', function (event) {
+    var target = event.target && event.target.closest
+      ? event.target.closest('[data-ads-conversion="contact"]')
+      : null;
+    if (!target || typeof window.gtag !== 'function') return;
+    loadAdsScript();
+    window.gtag('event', 'conversion', { send_to: 'AW-17606132701/uUm1CKncgpccEN2HoctB' });
+  });
+})();`}
         </Script>
         <a
           href="#main-content"
