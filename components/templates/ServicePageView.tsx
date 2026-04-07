@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { ServiceLayout } from "@/components/templates/ServiceLayout";
+import { ServiceTheoreticalAccordion } from "@/components/sections/ServiceTheoreticalAccordion";
+import { ServiceTitleIcon } from "@/components/ui/ServiceTitleIcon";
 import { services } from "@/lib/services";
 import { servicePages, type ServicePageData } from "@/lib/service-pages";
 
@@ -15,6 +17,7 @@ export function ServicePageView({ slug }: Props) {
   return (
     <ServiceLayout
       title={data.h1}
+      titleIcon={<ServiceTitleIcon name={data.icon} />}
       description={data.intro}
       canonicalPath={`/hizmetler/${slug}`}
       breadcrumb={[
@@ -23,14 +26,28 @@ export function ServicePageView({ slug }: Props) {
         { label: label },
       ]}
     >
-      <section className="mt-8 space-y-8" aria-label="Hizmet detayları">
+      <section
+        className="mt-8 rounded-2xl border border-slate-200/90 bg-slate-50/60 p-5 md:p-7"
+        aria-labelledby={`scientific-${slug}`}
+      >
+        <h2 id={`scientific-${slug}`} className="sr-only">
+          Bilimsel ve kuramsal çerçeve
+        </h2>
+        <p className="text-base leading-[1.75] text-slate-800 md:text-[17px] md:leading-[1.8]">
+          {data.scientificRationale}
+        </p>
+      </section>
+
+      <section className="mt-10 space-y-9" aria-label="Hizmet detayları">
         {data.sections.map((s) => (
           <section key={s.heading}>
             <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">{s.heading}</h2>
-            <p className="mt-3 text-slate-700 leading-relaxed">{s.body}</p>
+            <p className="mt-3 text-base leading-[1.75] text-slate-700 md:leading-[1.8]">{s.body}</p>
           </section>
         ))}
       </section>
+
+      <ServiceTheoreticalAccordion items={data.theoreticalFoundations} instanceKey={slug} />
     </ServiceLayout>
   );
 }

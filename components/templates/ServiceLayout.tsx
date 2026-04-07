@@ -12,13 +12,22 @@ const servicePortrait = "/images/portre.webp";
 type Props = {
   title: string;
   description: string;
+  /** H1 yanında ince çizgi ikon (Lucide). */
+  titleIcon?: ReactNode;
   breadcrumb: Crumb[];
   /** Güncel sayfa pathname — JSON-LD için (örn. `/online-terapi`). */
   canonicalPath: string;
   children: ReactNode;
 };
 
-export function ServiceLayout({ title, description, breadcrumb, canonicalPath, children }: Props) {
+export function ServiceLayout({
+  title,
+  description,
+  titleIcon,
+  breadcrumb,
+  canonicalPath,
+  children,
+}: Props) {
   return (
     <>
       <BreadcrumbJsonLd items={breadcrumb} path={canonicalPath} />
@@ -39,8 +48,11 @@ export function ServiceLayout({ title, description, breadcrumb, canonicalPath, c
               />
             </figure>
             <div className="min-w-0">
-              <h1 className="font-display text-3xl font-bold text-brand-navy md:text-4xl">{title}</h1>
-              <p className="mt-4 max-w-3xl text-lg text-slate-800">{description}</p>
+              <div className="flex items-start gap-3 md:gap-4">
+                {titleIcon}
+                <h1 className="font-display text-3xl font-bold text-brand-navy md:text-4xl">{title}</h1>
+              </div>
+              <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-800">{description}</p>
             </div>
           </header>
 

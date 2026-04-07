@@ -1,9 +1,16 @@
+export type ServiceIcon = "heart" | "activity" | "shield" | "sun" | "flame" | "brain";
+
 export type ServicePageData = {
   metaTitle: string;
   metaDescription: string;
   keywords: string;
   h1: string;
   intro: string;
+  /** Bilimsel / kuramsal derinlik paragrafı (E-E-A-T, dwell time). */
+  scientificRationale: string;
+  icon: ServiceIcon;
+  /** Akordeon: yöntem ve kuramsal çerçevelere genel atıflar. */
+  theoreticalFoundations: string[];
   sections: { heading: string; body: string }[];
   topic: string;
 };
@@ -18,6 +25,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Çift ve Evlilik Terapisi",
     intro:
       "Çift terapisti ve evlilik terapisti rolüyle, ilişki terapisinde duyguları güvenli bir çerçevede konuşabilmenizi hedefliyorum. Evlilik danışmanlığı sürecinde her iki tarafın da duyduğu endişeleri anlamak ve ortak çözüm alanları üretmek önceliklidir.",
+    scientificRationale:
+      "İlişkisel dinamikler, nörobiyolojik bir ihtiyaç olan 'güvenli bağlanma' üzerine kuruludur. Terapide, partnerlerin birbirine karşı geliştirdiği savunma mekanizmalarını çözümleyerek, beynin ayna nöron sistemi üzerinden empatiyi yeniden inşa ediyoruz. Duygu Odaklı Terapi (EFT) prensipleriyle, çatışma döngülerini 'güvenli bir liman' etkileşimine dönüştürmeyi hedefliyoruz.",
+    icon: "heart",
+    theoreticalFoundations: [
+      "Duygu Odaklı Çift Terapisi (EFT): çatışma döngülerini duygusal bağ ve güvenli bağlanma üzerinden yeniden çerçeveleme.",
+      "Bağlanma kuramı (Bowlby, Ainsworth): yakın ilişkilerde güven, kaçınma ve kaygı düzeneklerinin anlaşılması.",
+      "Çift ve aile sistemleri literatürü: iletişim kalıpları, onarım girişimleri ve etkileşimsel tekrarlayan döngüler.",
+    ],
     topic: "Çift",
     sections: [
       {
@@ -42,6 +57,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Panik Atak ve Anksiyete Bozuklukları",
     intro:
       "Panik atak terapi sürecinde belirtilerin biyolojik yanıtını anlamak ve güvenli maruz bırakma adımlarıyla kaçınmayı azaltmak temel hedeftir. Anksiyete psikolog desteği ile düşünce-duygu-davranış döngüsünü birlikte çalışırız.",
+    scientificRationale:
+      "Anksiyete, limbik sistemin (amigdala) hayatta kalma mekanizmasını 'hatalı alarm' moduna almasıdır. Bilişsel Davranışçı Terapi (BDT) teknikleriyle, bu otomatik düşünce kalıplarını nötralize ederek sinir sisteminin regülasyon kapasitesini artırıyoruz. Süreç, bedensel duyumların (çarpıntı, nefes darlığı) beynin prefrontal korteksi tarafından yeniden anlamlandırılmasını kapsar.",
+    icon: "activity",
+    theoreticalFoundations: [
+      "Bilişsel Davranışçı Terapi (BDT) ve anksiyete modelleri: otomatik düşünceler, maruz bırakma ve kaçınmanın işlevsel analizi.",
+      "Beden odaklı protokoller: interoseptif duyarlılık ve güvenli maruz bırakma adımları (uygulamada kişiye özel tempo).",
+      "Nörobilimsel çerçeve: alarm sisteminin aşırı uyarılması ve düzenlemenin beceriyle güçlendirilmesi.",
+    ],
     topic: "Panik",
     sections: [
       {
@@ -62,6 +85,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Travma Terapisi",
     intro:
       "Travma psikolog olarak, yaşanan olayların günlük yaşamınızdaki yankılarını yavaş ve güvenli adımlarla işleriz. Travma terapisinde stabilizasyon ve kaynaklandırma, ardından işleme aşamaları ile ilerlemek sık kullanılan bir yoldur.",
+    scientificRationale:
+      "Travmatik anılar, beynin hipokampus bölgesinde normal bir anı gibi depolanmak yerine, sağ yarımkürede 'donmuş ve kilitli' halde kalır. Terapi sürecinde, bu izole kalmış anı ağlarını mevcut yetişkin bilinciyle ilişkilendirerek, beynin adaptif bilgi işleme mekanizmasını aktive ediyoruz. Geçmişin duygusal yükünü bugün üzerindeki etkisinden arındırıyoruz.",
+    icon: "shield",
+    theoreticalFoundations: [
+      "Travma sonrası işleme modelleri: stabilizasyon, güvenli ilişki ve adım adım işleme ilkeleri.",
+      "Travma odaklı BDT (TF-CBT) ve benzeri kanıta dayalı çerçevelerden yararlanma (danışanın ihtiyacına göre).",
+      "Bellek, duygu düzenleme ve beden farkındalığı üzerine nörobilim ve psikoterapi entegrasyonu.",
+    ],
     topic: "Travma",
     sections: [
       {
@@ -83,6 +114,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Ergenlik ve Sınav Kaygısı Desteği",
     intro:
       "Ergenlik döneminde kimlik, akademik baskı ve aile içi dinamikler birlikte yürüyebilir. Ergen psikoloğu olarak sınav kaygısı psikolog ihtiyaçlarında beceri eğitimi ve düşünce çalışmaları ile destek veriyorum.",
+    scientificRationale:
+      "Ergenlik dönemi, prefrontal korteks ile limbik sistem arasındaki gelişimsel uyumun zaman içinde oturduğu bir evredir; bu süreçte uyaran değerlendirme, dürtü düzenleme ve uzun vadeli planlama becerileri hızla olgunlaşır. Sınav kaygısı, bu gelişimsel zeminde bilişsel çarpıtmalar, kaçınma ve bedensel gerginlik döngüsü olarak ortaya çıkabilir. Terapide, BDT ve beceri eğitimi ile düşünce–duygu–beden bağlantısını yapılandırarak ergenin kendi iç düzenleyicilerini güçlendirmesine odaklanıyoruz.",
+    icon: "brain",
+    theoreticalFoundations: [
+      "Ergen gelişimi ve stres düzenleme: duygusal ve bilişsel olgunlaşmanın birlikte ele alınması.",
+      "Sınav kaygısı için BDT: başa çıkma, maruz kalma ve bilişsel yeniden yapılandırma.",
+      "Aile–okul iş birliği: gerektiğinde sınırlar ve iletişim çerçevesinde veli bilgilendirmesi.",
+    ],
     topic: "Sınav",
     sections: [
       {
@@ -103,6 +142,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Öfke Kontrolü Terapisi",
     intro:
       "Öfke kontrolü psikolog eşliğinde öfke dalgalarını bastırmak değil, erken uyarı sinyallerini tanıyıp seçimli yanıtlar geliştirmek hedeflenir. Öfke kontrolü terapisti ile duygusal düzenleme becerileri pratik egzersizlerle desteklenir.",
+    scientificRationale:
+      "Öfke, genellikle altta yatan karşılanmamış bir ihtiyacın veya ikincil bir duygunun dışavurumudur. Terapide, dürtü kontrolü sağlayan prefrontal devreleri güçlendirerek, tetikleyici anlarda 'tepki vermek' yerine 'yanıt vermeyi' öğreten bilişsel araçlar geliştiriyoruz.",
+    icon: "flame",
+    theoreticalFoundations: [
+      "Duygu düzenleme ve öfke yönetimi: tetikleyici–düşünce–duygu–davranış zincirinin çalışılması.",
+      "BDT ve çözüm odaklı araçlar: alternatif yanıtlar, zaman aşımı ve iletişim becerileri.",
+      "İlişkisel bağlam: öfkenin bağlanma ve ihtiyaç dili olarak okunması.",
+    ],
     topic: "Öfke",
     sections: [
       {
@@ -123,6 +170,14 @@ export const servicePages: Record<string, ServicePageData> = {
     h1: "Depresyon Terapisi",
     intro:
       "Depresyon psikolog desteği ile duygusal yükü yargılamadan ele alır, aktivasyon, bilişsel ve ilişkisel düzenlemelerle iyileşme yollarını birlikte ararız. Depresyon terapisinde küçük ve sürdürülebilir hedefler sık kullanılır.",
+    scientificRationale:
+      "Depresyon, sadece bir duygu durumu değil, bilişsel esnekliğin ve motivasyonel döngülerin geçici olarak işlev yitirmesidir. Terapi odasında, kişinin öz-şemalarını ve davranışsal aktivasyon seviyelerini inceleyerek, nöroplastisite yardımıyla zihnin yeniden canlanma sürecine eşlik ediyoruz.",
+    icon: "sun",
+    theoreticalFoundations: [
+      "Davranışsal aktivasyon ve BDT: düşünce çarpıtmaları, kaçınma ve aktivite düzeyinin birlikte ele alınması.",
+      "Öz-şema ve bağlanma temaları: ilişkisel örüntülerin depresyon üzerindeki etkisinin anlaşılması.",
+      "Kanıta dayalı depresyon protokolleri: kişiye özel hedefler ve sürdürülebilir adımlar.",
+    ],
     topic: "Depresyon",
     sections: [
       {
