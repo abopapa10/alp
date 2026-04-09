@@ -1,8 +1,25 @@
 import type { ReactNode } from "react";
+import dynamic from "next/dynamic";
 import { MapPin, Navigation, ExternalLink } from "lucide-react";
 import { CTAGroup } from "@/components/ui/CTAGroup";
-import { ContactMapEmbed } from "@/components/sections/ContactMapEmbed";
 import { siteConfig } from "@/lib/site";
+
+const ContactMapEmbed = dynamic(
+  () =>
+    import("@/components/sections/ContactMapEmbed").then((mod) => ({
+      default: mod.ContactMapEmbed,
+    })),
+  {
+    loading: () => (
+      <div
+        className="flex aspect-[16/10] min-h-[200px] w-full items-center justify-center overflow-hidden rounded-xl border border-slate-200/90 bg-slate-100 text-sm text-slate-700 shadow-sm sm:min-h-[220px] md:aspect-[4/3] md:min-h-[280px] md:rounded-2xl lg:aspect-video lg:min-h-[320px]"
+        aria-hidden
+      >
+        Harita yükleniyor…
+      </div>
+    ),
+  },
+);
 
 function Label({ children }: { children: ReactNode }) {
   return (

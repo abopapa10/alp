@@ -28,6 +28,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/narsizm-ne-demek" className="hover:text-white">
+                  Narsizm ne demek?
+                </Link>
+              </li>
+              <li>
                 <Link href="/kvkk" className="hover:text-white">
                   KVKK
                 </Link>

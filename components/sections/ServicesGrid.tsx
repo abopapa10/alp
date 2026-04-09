@@ -14,7 +14,7 @@ export function ServicesGrid({ items, id }: { items: ServiceItem[]; id?: string 
           id="services-heading"
           className="font-display text-2xl font-bold text-brand-navy md:text-3xl"
         >
-          Uzmanlık Alanlarımız ve Terapi Hizmetleri
+          Uzmanlık Alanlarım ve Terapi Hizmetleri
         </h2>
         <p className="mt-3 max-w-2xl text-slate-700">
           İstanbul Avrupa Yakası ve çevre ilçelerde yüz yüze; Türkiye genelinde online terapi ile

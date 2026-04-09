@@ -31,6 +31,17 @@ module.exports = {
     if (path.startsWith("/hizmetler/") || path === "/online-terapi") {
       return { ...base, priority: 0.85, changefreq: "weekly" };
     }
+    if (
+      path === "/narsizm-ne-demek" ||
+      path === "/toksik-iliski-nedir" ||
+      path === "/tukenmislik-sendromu" ||
+      path === "/uykuya-dalamama-neden-olur" ||
+      path === "/ghosting-ne-demek" ||
+      path === "/othello-sendromu" ||
+      path === "/love-bombing-nedir"
+    ) {
+      return { ...base, priority: 0.75, changefreq: "monthly" };
+    }
     if (path === "/kvkk" || path === "/gizlilik-politikasi" || path === "/cerez-politikasi") {
       return { ...base, priority: 0.4, changefreq: "yearly" };
     }

@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Breadcrumb, type Crumb } from "@/components/ui/Breadcrumb";
 import { BreadcrumbJsonLd } from "@/components/ui/BreadcrumbJsonLd";
 import { CTAGroup } from "@/components/ui/CTAGroup";
-import { LazyTestimonialsMarquee } from "@/components/sections/LazyTestimonialsMarquee";
-import { LazyContactSection } from "@/components/sections/LazyContactSection";
+import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
+import { ContactSection } from "@/components/sections/ContactSection";
 import type { ReactNode } from "react";
 import { siteConfig } from "@/lib/site";
 
@@ -18,6 +18,10 @@ type Props = {
   /** Güncel sayfa pathname — JSON-LD için (örn. `/online-terapi`). */
   canonicalPath: string;
   children: ReactNode;
+  /** Alt CTA bandı başlığı (varsayılan: randevu çağrısı). */
+  ctaHeading?: string;
+  /** Alt CTA bandı açıklama paragrafı. */
+  ctaDescription?: string;
 };
 
 export function ServiceLayout({
@@ -27,6 +31,8 @@ export function ServiceLayout({
   breadcrumb,
   canonicalPath,
   children,
+  ctaHeading = "Bu konuda destek almak için ilk adımı atın",
+  ctaDescription = "Randevu veya ön görüşme için telefon veya WhatsApp üzerinden kısa bir mesaj yeterli; size en uygun zamanı birlikte planlarız.",
 }: Props) {
   return (
     <>
@@ -66,20 +72,17 @@ export function ServiceLayout({
               id="service-cta-heading"
               className="font-display text-xl font-bold text-brand-navy md:text-2xl"
             >
-              Bu konuda destek almak için ilk adımı atın
+              {ctaHeading}
             </h2>
-            <p className="mt-2 max-w-2xl text-slate-800">
-              Randevu veya ön görüşme için telefon veya WhatsApp üzerinden kısa bir mesaj yeterli; size en
-              uygun zamanı birlikte planlarız.
-            </p>
+            <p className="mt-2 max-w-2xl text-slate-800">{ctaDescription}</p>
             <div className="mt-6">
               <CTAGroup />
             </div>
           </section>
         </div>
       </article>
-      <LazyTestimonialsMarquee />
-      <LazyContactSection />
+      <TestimonialsMarquee />
+      <ContactSection />
     </>
   );
 }

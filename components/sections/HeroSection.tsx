@@ -34,8 +34,19 @@ export function HeroSection() {
               {siteConfig.tagline}
             </h1>
             <p className="mt-6 text-base leading-relaxed text-slate-800 md:text-lg">
-              İstanbul Avrupa Yakası ve psikolojik danışmanlık merkezi arayışınızda; Hacettepe Psikoloji
-              mezunu bir uzman ile BDT ve psikodinamik yöntemlerle terapi randevusu alın.
+              <strong className="font-semibold text-brand-navy">İstanbul psikolog</strong> ve{" "}
+              <strong className="font-semibold text-brand-navy">Beşiktaş psikolog</strong> arayanlar için
+              yüz yüze seansların yanı sıra <strong className="font-semibold text-brand-navy">
+                online terapi
+              </strong>{" "}
+              ve <strong className="font-semibold text-brand-navy">online psikolojik danışmanlık</strong>{" "}
+              sunuyorum. Hacettepe Psikoloji mezunu bir uzman ile BDT ve psikodinamik yöntemlerle{" "}
+              <strong className="font-semibold text-brand-navy">psikolog randevu</strong> ve{" "}
+              <strong className="font-semibold text-brand-navy">psikologdan randevu</strong> taleplerinizi
+              netleştirebilirsiniz; <strong className="font-semibold text-brand-navy">
+                İstanbul Avrupa Yakası psikolog
+              </strong>{" "}
+              arayışınızda merkezi konum ve esnek planlama ile yanınızdayım.
             </p>
             <div className="mt-8">
               <CTAGroup />

@@ -31,18 +31,20 @@ export const services: ServiceItem[] = [
   {
     slug: "panik-atak-anksiyete",
     title: "Panik Atak ve Anksiyete",
-    cardHeading: "Panik Atak Terapisi ve Anksiyete Terapisi — Psikolog Desteği",
-    short: "Panik atak ve anksiyete bozukluklarında BDT odaklı çalışma.",
+    cardHeading: "Panik Atak, Anksiyete, Sosyal Fobi ve Agorafobi — Psikolog, BDT",
+    short: "Panik atak anında stratejiler, anksiyete ve sosyal fobi için kanıta dayalı terapi.",
     icon: CloudLightning,
-    keywords: "panik atak psikolog, panik atak terapi, anksiyete psikolog, anksiyete terapi",
+    keywords:
+      "panik atak psikolog, panik atak anında ne yapılmalı, anksiyete terapi, sosyal fobi, agorafobi, anksiyete psikolog",
   },
   {
     slug: "travma-terapisi",
     title: "Travma Terapisi",
-    cardHeading: "Travma Terapisi, Travma Psikolog ve Regresyon Terapisi Desteği",
-    short: "Travma sonrası iyileşmeyi destekleyen yapılandırılmış terapi süreci.",
+    cardHeading: "TSSB, Travma Terapisi ve Travma Psikolog — EMDR, BDT, Beşiktaş",
+    short: "Travma sonrası stres, TSSB belirtileri ve travma terapisinde güvenli, kanıta dayalı süreç.",
     icon: Shield,
-    keywords: "travma terapisi, travma psikolog, regresyon terapisi psikolog, regresyon terapisi",
+    keywords:
+      "travma terapisi, TSSB, travma psikolog, EMDR terapisi, travma odaklı BDT, regresyon terapisi psikolog",
   },
   {
     slug: "ergen-sinav-kaygisi",
@@ -64,10 +66,11 @@ export const services: ServiceItem[] = [
   {
     slug: "ofke-kontrolu",
     title: "Öfke Kontrolü",
-    cardHeading: "Öfke Kontrolü Terapisi ve Öfke Kontrolü Psikolog",
-    short: "Öfke tetikleyicilerini tanıma ve düzenleme becerilerinin güçlendirilmesi.",
+    cardHeading: "Öfke Kontrol Bozukluğu ve Öfke Terapisi — Psikolog Desteği",
+    short: "Öfke patlamalarını anlama, BDT ile tetikleyici–duygu–davranış zincirini çalışma.",
     icon: Flame,
-    keywords: "öfke kontrolü terapisi, öfke kontrolü terapisti, öfke kontrolü psikolog",
+    keywords:
+      "öfke kontrol bozukluğu nasıl anlaşılır, öfke kontrolü terapisi, öfke kontrolü psikolog, öfke kontrolü terapisti",
   },
 ];
 

@@ -5,7 +5,6 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
 import { MobileStickyCTA } from "@/components/layout/MobileStickyCTA";
-import { LocalBusinessJsonLd, PsychologistJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -206,8 +205,6 @@ document.addEventListener('click', function (event) {
         >
           İçeriğe geç
         </a>
-        <LocalBusinessJsonLd />
-        <PsychologistJsonLd />
         <Header />
         <main
           id="main-content"

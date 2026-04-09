@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ServicePageView } from "@/components/templates/ServicePageView";
+import { TravmaServicePageView } from "@/components/templates/TravmaServicePageView";
 import { generateServicePageMetadata } from "@/lib/service-metadata";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -7,5 +7,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function TravmaTerapisiPage() {
-  return <ServicePageView slug="travma-terapisi" />;
+  return <TravmaServicePageView />;
 }

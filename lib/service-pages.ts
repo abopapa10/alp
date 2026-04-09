@@ -50,13 +50,15 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "panik-atak-anksiyete": {
-    metaTitle: "Panik Atak ve Anksiyete Terapisi | İstanbul Psikolog",
+    metaTitle:
+      "Panik Atak Anında Ne Yapılır? Anksiyete, Sosyal Fobi, Agorafobi | İstanbul Psikolog",
     metaDescription:
-      "Panik atak psikolog desteği ve anksiyete terapi süreci. BDT ile tetikleyicileri tanıma, bedensel duyumları yönetme ve kaçınmayı azaltma.",
-    keywords: "panik atak psikolog, panik atak terapi, anksiyete psikolog, anksiyete terapi",
+      "Panik atak anında ne yapılmalı, kalp krizi farkı, anksiyete bozukluğu nasıl geçer? Sosyal fobi ve agorafobi hakkında bilgi; Beşiktaş panik atak psikolog ve BDT desteği.",
+    keywords:
+      "panik atak anında ne yapılmalı, panik atak nasıl sakinleşilir, panik atak ile kalp krizi farkı, anksiyete bozukluğu nasıl geçer, anksiyeteden tamamen kurtuldum, sosyal fobi nasıl yenilir, sosyal anksiyete, agorafobi nedir, alan korkusu, panik atak psikolog, anksiyete terapi, anksiyete psikolog",
     h1: "Panik Atak ve Anksiyete Bozuklukları",
     intro:
-      "Panik atak terapi sürecinde belirtilerin biyolojik yanıtını anlamak ve güvenli maruz bırakma adımlarıyla kaçınmayı azaltmak temel hedeftir. Anksiyete psikolog desteği ile düşünce-duygu-davranış döngüsünü birlikte çalışırız.",
+      "Panik atak ve anksiyete bozukluklarında belirtilerin biyolojik yanıtını anlamak, güvenli maruz bırakma ile kaçınmayı azaltmak ve kaygı döngüsünü kırmak temel hedeftir. İnternette sık aranan “anksiyeteden tamamen kurtuldum” gibi ifadeler gerçekçi iyileşme yolunu basitleştirebilir; oysa çoğu danışanda amaç belirtileri yönetilebilir hale getirmek, tetikleyicilerle başa çıkmak ve yaşam kalitesini artırmaktır. Anksiyete psikolog eşliğinde düşünce–duygu–davranış örüntülerini birlikte çalışır; gerekirse psikiyatrik değerlendirme yönlendirmesi de konuşulur.",
     scientificRationale:
       "Anksiyete, limbik sistemin (amigdala) hayatta kalma mekanizmasını 'hatalı alarm' moduna almasıdır. Bilişsel Davranışçı Terapi (BDT) teknikleriyle, bu otomatik düşünce kalıplarını nötralize ederek sinir sisteminin regülasyon kapasitesini artırıyoruz. Süreç, bedensel duyumların (çarpıntı, nefes darlığı) beynin prefrontal korteksi tarafından yeniden anlamlandırılmasını kapsar.",
     icon: "activity",
@@ -68,36 +70,65 @@ export const servicePages: Record<string, ServicePageData> = {
     topic: "Panik",
     sections: [
       {
-        heading: "Anksiyete terapi planı",
-        body: "Bilimsel olarak desteklenen BDT teknikleri ile nefes ve beden farkındalığı, bilişsel çürütme ve adım adım maruz bırakma planı kurgulanabilir. Terapi randevusu ile kişisel ihtiyaçlarınıza uygun tempo belirlenir.",
+        heading: "Panik atak anında ne yapılmalı, nasıl sakinleşilir?",
+        body: "Panik atak anında önce güvenliğinizi sağlayın (oturun veya güvenli bir yere geçin). Nefesi yavaşlatmak için burnundan 4 sayıda alıp ağızdan 6 sayıda verme gibi ritimli nefes egzersizleri kullanılabilir; aşırı hiperventilasyondan kaçının. ‘Bu bir panik atağın parçası, geçici bir alarm tepkisi’ diyerek düşünceyi yumuşatmaya çalışın; bedendeki çarpıntı ve sıcak basması genellikle dakikalar içinde doruktan iner. Tekrarlayan ataklarda kalıcı çözüm için panik atak psikolog desteği ile BDT ve interoseptif maruz bırakma gibi yapılandırılmış protokoller planlanır.",
       },
       {
-        heading: "Beklentiler",
-        body: "Panik atak psikolog eşliğinde ilerleme zaman içinde gelişir; bazı haftalar iç gözlem günlüğü, bazı haftalar beceri tekrarı ile desteklenir. Amacım günlük yaşamınızda kontrol hissini güçlendirmektir.",
+        heading: "Panik atak ile kalp krizi farkı nasıl anlaşılır?",
+        body: "Kesin ayırım internet metniyle yapılamaz; şüphede özellikle göğüs ağrısı sol kola yayılıyorsa, nefes darlığına ek olarak yoğun terleme ve bayılma hissi varsa veya risk faktörleriniz yüksekse 112’yi aramak gerekir. Panik atağa sık eşlik eden: ani yoğun korku, baş dönmesi, uyuşma, ‘kontrolü kaybedeceğim’ düşüncesi ve atakların dakikalar içinde zirve yapıp azalmasıdır. Kalp kaynaklı ağrıda risk daha heterojen olabilir; yine de ‘eminim’ demek yerine gerektiğinde acil servis değerlendirmesi önceliklidir. Tekrarlayan panik için düzenli psikolog randevusu ile tetikleyiciler ve kaçınma örüntüleri çalışılır.",
+      },
+      {
+        heading: "Anksiyete bozukluğu nasıl geçer?",
+        body: "Anksiyete bozukluğu ‘bir gecede’ geçmez; kanıta dayalı psikoterapide BDT ile otomatik düşünceler, maruz bırakma hiyerarşisi, problem çözme ve gevşeme becerileri bir arada işlenir. Bazen ilaç tedavisi eklenir (psikiyatrist kararı). Arama motorlarında ‘anksiyeteden tamamen kurtuldum’ araması yapan birçok kişi aslında uzun süreli çaba ve profesyonel destekle belirtilerin belirgin şekilde hafiflediği bir süreci kasteder; sizin hedefinizi birlikte netleştirmek için Beşiktaş’taki klinikte veya online terapi ile görüşebilirsiniz.",
+      },
+      {
+        heading: "Sosyal fobi (sosyal anksiyete) nasıl yenilir?",
+        body: "Sosyal fobide temel tema başkalarının olumsuz değerlendirmesine dair aşırı korku ve kaçınmadır. BDT’de bilişsel çarpıtmalar (zihin okuma, felaketleştirme) çalışılır; kademeli maruz bırakma ile konuşma, toplantı veya yemek gibi durumlarda özgüven artırılır. Rol oyunları ve sosyal beceri egzersizleri sık kullanılır. Sosyal anksiyete yoğunsa ve işlevsellik düşüyorsa psikolog desteği ile sistematik bir plan oluşturmak en sağlıklı adımdır.",
+      },
+      {
+        heading: "Agorafobi (alan korkusu) nedir?",
+        body: "Agorafobi; çıkış yapmanın zor olduğu durumlarda veya yardım alınamayacağı sanılan ortamlarda yoğun korku ve kaçınma ile kendini gösterir; sıklıkla toplu taşıma, kalabalık, köprü veya uzun süre dışarıda kalmak tetikleyici olabilir. Panik bozuklukla birlikte görülebilir. Tedavide kaçınma haritası çıkarılır, güvenli adımlarla maruz bırakma ve panik yönetimi becerileri birleştirilir. Agorafobi belirtileri günlük yaşamı kısıtlıyorsa ertelemeden psikolog ile çalışmak önemlidir.",
+      },
+      {
+        heading: "BDT ile anksiyete terapi planı",
+        body: "Bilimsel olarak desteklenen BDT teknikleri ile nefes ve beden farkındalığı, bilişsel çürütme ve adım adım maruz bırakma planı kişiye özel kurgulanır. Terapi randevusu ile tempo ve hedefler birlikte belirlenir.",
+      },
+      {
+        heading: "Psikolog desteği ve beklentiler",
+        body: "Panik atak psikolog eşliğinde ilerleme haftalar içinde adım adım gelişir; iç gözlem günlüğü ve beceri tekrarı sık kullanılır. Amacım günlük yaşamınızda kontrol hissini güçlendirmek ve kaygıya karşı sürdürülebilir araçlar kazandırmaktır. İlk adım için iletişim bölümünden veya WhatsApp üzerinden randevu talep edebilirsiniz.",
       },
     ],
   },
   "travma-terapisi": {
-    metaTitle: "Travma Terapisi ve Travma Psikolog | Beşiktaş",
+    metaTitle: "TSSB Nedir? Travma Sonrası Stres ve Travma Terapisi | Beşiktaş",
     metaDescription:
-      "Travma terapisi ve travma psikolog desteği. Travma sonrası belirtileri anlamlandırma, regresyon terapisi ihtiyacı olan vakalarda güvenli ve yapılandırılmış çerçeve.",
-    keywords: "travma terapisi, travma psikolog, regresyon terapisi psikolog, regresyon terapisi",
-    h1: "Travma Terapisi",
+      "Travma sonrası stres bozukluğu (TSSB) nedir, belirtileri nelerdir? Travma terapisi, EMDR ve BDT ile Beşiktaş’ta yüz yüze ve online travma psikolog desteği.",
+    keywords:
+      "travma terapisi, travma psikolog, TSSB, travma sonrası stres bozukluğu, PTSD, EMDR terapisi, travma odaklı BDT, regresyon terapisi psikolog",
+    h1: "Travma Sonrası Stres Bozukluğu (TSSB) Nedir? Belirtileri ve Tedavi Yöntemleri",
     intro:
-      "Travma psikolog olarak, yaşanan olayların günlük yaşamınızdaki yankılarını yavaş ve güvenli adımlarla işleriz. Travma terapisinde stabilizasyon ve kaynaklandırma, ardından işleme aşamaları ile ilerlemek sık kullanılan bir yoldur.",
+      "Travma yalnızca haber başlıklarındaki büyük olaylarla sınırlı değildir: kişinin güvenliğini, bütünlüğünü veya bağlarını tehdit eden, sonrasında iz bırakan her deneyim travmatik olabilir. Tekrarlayan mikro travmalar, çocukluk çağı yaşantıları veya ani kayıplar da aynı çerçevede ele alınır. Travma psikolog eşliğinde bu yankıları yavaş, güvenli ve yapılandırılmış adımlarla işlemek mümkündür.",
     scientificRationale:
-      "Travmatik anılar, beynin hipokampus bölgesinde normal bir anı gibi depolanmak yerine, sağ yarımkürede 'donmuş ve kilitli' halde kalır. Terapi sürecinde, bu izole kalmış anı ağlarını mevcut yetişkin bilinciyle ilişkilendirerek, beynin adaptif bilgi işleme mekanizmasını aktive ediyoruz. Geçmişin duygusal yükünü bugün üzerindeki etkisinden arındırıyoruz.",
+      "Travma sonrası stres bozukluğu (TSSB), tehdit algısının uzun süre devam etmesiyle ilişkili belirtiler kümesi olarak tanımlanır; istilacı belirtiler, kaçınma, duygu ve biliş değişiklikleri ile aşırı uyarılma başlıkları altında gruplanır. Travmatik anıların bellek ve duygu düzenleme sistemleriyle ilişkisi nörobilim ve psikoterapi literatüründe genişçe incelenir. Terapide amaç, anıyı tehdit sinyalinden arındırarak bugünkü yaşamınızda daha esnek ve güvenli bir düzen kurmanıza eşlik etmektir.",
     icon: "shield",
     theoreticalFoundations: [
-      "Travma sonrası işleme modelleri: stabilizasyon, güvenli ilişki ve adım adım işleme ilkeleri.",
-      "Travma odaklı BDT (TF-CBT) ve benzeri kanıta dayalı çerçevelerden yararlanma (danışanın ihtiyacına göre).",
-      "Bellek, duygu düzenleme ve beden farkındalığı üzerine nörobilim ve psikoterapi entegrasyonu.",
+      "Travma sonrası işleme modelleri: stabilizasyon, kaynaklandırma ve adım adım işleme (PE, NET, TF-CBT gibi kanıta dayalı protokoller danışana göre).",
+      "EMDR: çift taraflı duyusal uyarım ile travmatik bellek işleme çerçevesi (eğitimli uygulayıcı ile).",
+      "Travma odaklı BDT (TF-CBT) ve bilişsel yeniden yapılandırma; regresyon taleplerinde etik değerlendirme ve hazır bulunuşluk.",
     ],
     topic: "Travma",
     sections: [
       {
+        heading: "Yaygın travma türleri",
+        body: "Doğal afetler, ciddi kazalar, ani veya uzun süreli kayıplar, sağlık krizleri, şiddet veya ihmal, çocukluk çağı travmaları ve tekrarlayan ilişkisel yaralanmalar travma spektrumunun parçası olabilir. Her deneyimin psikolojik etkisi kişisel bağlam, destek kaynakları ve önceki yaşantılarla şekillenir; karşılaştırma yerine kendi hikâyenizi onurlandırmak iyileşmenin parçasıdır.",
+      },
+      {
+        heading: "Tedavi yaklaşımları: EMDR ve Bilişsel Davranışçı Terapi (BDT)",
+        body: "Travma alanında sık başvurulan yöntemler arasında travma odaklı BDT (örneğin maruz bırakma ve bilişsel işleme bileşenleri) ve EMDR (Eye Movement Desensitization and Reprocessing) yer alır. Hangi protokolün, hangi tempoda ve hangi aşamada kullanılacağı; güvenlik, hazır bulunuşluk ve terapötik ilişki temelinde birlikte planlanır. Regresyon terapisi talep edildiğinde sınırlar ve etik çerçeve ayrıca değerlendirilir.",
+      },
+      {
         heading: "Regresyon terapisi ve dikkat edilmesi gerekenler",
-        body: "Regresyon terapisi psikolog eşliğinde talep edildiğinde, her danışanın sınırları ve hazır bulunuşluğu ayrı değerlendirilir. Travma alanında etik çerçeve ve güvenli ilişki terapinin temelidir.",
+        body: "Regresyon terapisi psikolog eşliğinde talep edildiğinde, her danışanın sınırları ve hazır bulunuşluğu ayrı değerlendirilir. Travma alanında güvenli ilişki ve şeffaf bilgilendirme terapinin temelidir.",
       },
       {
         heading: "İstanbul’da yüz yüze ve online",
@@ -135,10 +166,11 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "ofke-kontrolu": {
-    metaTitle: "Öfke Kontrolü Terapisi ve Psikolog | İstanbul",
+    metaTitle: "Öfke Kontrol Bozukluğu ve Öfke Terapisi | İstanbul Psikolog",
     metaDescription:
-      "Öfke kontrolü terapisi, öfke kontrolü terapisti ve psikolog desteği ile tetikleyicileri tanıma ve iletişim becerilerini güçlendirme.",
-    keywords: "öfke kontrolü terapisi, öfke kontrolü terapisti, öfke kontrolü psikolog",
+      "Öfke kontrol bozukluğu nasıl anlaşılır? Öfke kontrolü terapisi, BDT ve psikolog desteği ile tetikleyicileri tanıma, iletişim becerileri ve duygu düzenleme.",
+    keywords:
+      "öfke kontrol bozukluğu nasıl anlaşılır, öfke kontrolü terapisi, öfke kontrolü terapisti, öfke kontrolü psikolog, öfke yönetimi",
     h1: "Öfke Kontrolü Terapisi",
     intro:
       "Öfke kontrolü psikolog eşliğinde öfke dalgalarını bastırmak değil, erken uyarı sinyallerini tanıyıp seçimli yanıtlar geliştirmek hedeflenir. Öfke kontrolü terapisti ile duygusal düzenleme becerileri pratik egzersizlerle desteklenir.",
@@ -152,6 +184,10 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     topic: "Öfke",
     sections: [
+      {
+        heading: "Öfke kontrol bozukluğu nasıl anlaşılır?",
+        body: "Öfke kontrol bozukluğu (intermittent explosive disorder gibi tanılar veya genel öfke düzenleme güçlüğü) sıklıkla sık sık patlayan öfke nöbetleri, eşya kırma, bağırma, fiziksel saldırganlık veya sonrasında pişmanlık ile kendini gösterir. İş, okul veya ilişkilerde tekrarlayan sonuçlar (ihbar, ayrılık, iş kaybı) uyarı işareti olabilir. Öfke her zaman ‘kötü’ değildir; mesele sıklık, şiddet ve kontrol kaybıdır. Kesin tanı ve tedavi planı için klinik görüşme gerekir; öfke kontrolü psikolog eşliğinde tetikleyiciler, alt duygular (utanç, korku, suçluluk) ve ilişkisel örüntüler birlikte ele alınır.",
+      },
       {
         heading: "Terapi sürecinde neler işlenir?",
         body: "Tetikleyici-sonuç döngüleri, bedensel alarm tepkileri ve iç söylem kalıpları birlikte çalışılır. İhtiyaç halinde BDT ve çözüm odaklı araçlar bir arada kullanılabilir.",

@@ -7,7 +7,7 @@ export const siteConfig = {
   tagline: "Beşiktaş Psikolog ve Online Terapi Hizmetleri | Psk. Ahmet Alparslan Sancar",
   titleTemplate: "%s | Psk. Ahmet Alparslan Sancar",
   description:
-    "Beşiktaş psikolog ve online terapi: Hacettepe mezunu Psk. Ahmet Alparslan Sancar ile çift terapisi, panik atak, anksiyete, travma, depresyon ve psikoterapi randevusu.",
+    "Beşiktaş psikolog ve İstanbul psikolog arayanlar için online terapi, online psikolojik danışmanlık ve yüz yüze seans. Psikolog randevu, psikologdan randevu ve psikoloji İstanbul çapında kanıta dayalı terapi: Hacettepe mezunu Psk. Ahmet Alparslan Sancar.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ||
     process.env.SITE_URL ||
@@ -19,6 +19,8 @@ export const siteConfig = {
   email: "info@ahmetalparslansancar.com",
   address: {
     street: "Sinanpaşa Mah. (Beşiktaş)",
+    /** Beşiktaş ilçe posta kodu (şema / haritalar için). */
+    postalCode: "34353",
     city: "İstanbul",
     region: "Beşiktaş",
     country: "TR",
@@ -49,6 +51,6 @@ export const aboutOpening =
   "Hayatın getirdiği zorluklarla başa çıkarken yanınızda bilimsel kanıtlı yöntemlerle duruyorum.";
 
 export const aboutBody =
-  "Hacettepe Üniversitesi Psikoloji Bölümü mezunu bir psikoloğum. Beşiktaş'daki kliniğimde yalnızca bilimsel olarak kanıtlanmış yöntemler (Bilişsel Davranışçı Terapi, Psikodinamik ve Birey Odaklı Terapi) ile psikoterapi hizmeti veriyorum. 500'ü aşkın danışan sayısına ulaşarak bu süreçte gurur verici sonuçlar elde ettim. Beşiktaş'ta güvenilir bir psikolog arıyorsanız veya psikoterapi randevusu almak istiyorsanız, benimle iletişime geçebilirsiniz.";
+  "Hacettepe Üniversitesi Psikoloji Bölümü mezunu bir psikoloğum. Beşiktaş'daki kliniğimde yalnızca bilimsel olarak kanıtlanmış yöntemler (Bilişsel Davranışçı Terapi, Psikodinamik ve Birey Odaklı Terapi) ile psikoterapi hizmeti veriyorum. 500'ü aşkın danışan sayısına ulaşarak bu süreçte gurur verici sonuçlar elde ettim. İstanbul Avrupa Yakası psikolog ve online terapi arayan danışanlarla da düzenli çalışıyorum; psikolog tavsiye ve psikolog randevu sürecinde önce kısa bir ön görüşme ile beklentileri netleştirmeyi öneririm. Beşiktaş'ta güvenilir bir psikolog arıyorsanız veya psikoterapi randevusu almak istiyorsanız, benimle iletişime geçebilirsiniz.";
 
 export const aboutExcerpt = `${aboutOpening} ${aboutBody}`;

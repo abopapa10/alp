@@ -3,21 +3,39 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSnippet } from "@/components/sections/AboutSnippet";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { OnlineTherapyBanner } from "@/components/sections/OnlineTherapyBanner";
-import { LazyTestimonialsMarquee } from "@/components/sections/LazyTestimonialsMarquee";
-import { LazyContactSection } from "@/components/sections/LazyContactSection";
+import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
+import { ContactSection } from "@/components/sections/ContactSection";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { HomeBlogTeaser } from "@/components/sections/HomeBlogTeaser";
+import { HomePageSeoFooter } from "@/components/sections/HomePageSeoFooter";
 import { homeServices } from "@/lib/services";
+import { LocalBusinessJsonLd, PsychologistJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 
 const homeKeywords = [
+  "İstanbul psikolog",
   "İstanbul Avrupa Yakası Psikolog",
+  "İstanbul Avrupa psikolog",
   "İstanbul Psikolog Klinikleri",
-  "Psikolog Tavsiye",
-  "Psikolog Randevu",
   "İstanbul Psikolog",
+  "Beşiktaş Psikolog",
+  "beşiktaş psikolog",
+  "online terapi",
+  "Online terapi ücretleri",
+  "online psikolojik danışmanlık",
+  "Psikolog",
+  "psikolog",
+  "Psikolog Randevu",
+  "psikolog randevu",
+  "psikologdan randevu",
+  "Psikolog seans ücretleri",
+  "psikolog seans ücretleri",
+  "Psikoloji İstanbul",
+  "psikoloji istanbul",
+  "Psikolog Tavsiye",
+  "psikolog tavsiye",
   "Terapi Randevusu",
   "Psikolojik Danışmanlık Merkezi",
-  "Beşiktaş Psikolog",
   "Şişli Psikolog",
   "Nişantaşı Psikolog",
   "Kadıköy Psikolog",
@@ -46,13 +64,17 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <LocalBusinessJsonLd />
+      <PsychologistJsonLd />
       <HeroSection />
-      <AboutSnippet />
       <ServicesGrid items={homeServices} id="hizmetler" />
+      <AboutSnippet />
+      <TestimonialsMarquee />
       <OnlineTherapyBanner />
-      <LazyTestimonialsMarquee />
       <FAQAccordion />
-      <LazyContactSection />
+      <HomeBlogTeaser />
+      <ContactSection />
+      <HomePageSeoFooter />
     </>
   );
 }
