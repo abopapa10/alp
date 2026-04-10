@@ -3,6 +3,14 @@ import { ArrowRight, BookOpen } from "lucide-react";
 
 const posts = [
   {
+    href: "/panseksuel-ne-demek",
+    title: "Panseksüel ne demek? Bi farkı, Kinsey, Butler ve kapsayıcı rehber",
+  },
+  {
+    href: "/histerik-ne-demek",
+    title: "Histerik ne demek? Histeri, Freud, konversiyon ve histriyonik kişilik",
+  },
+  {
     href: "/manipulasyon-nedir",
     title: "Manipülasyon rehberi: duygusal, cinsel ve sosyal boyutlar",
   },
@@ -91,4 +99,5 @@ export function HomeBlogTeaser() {
     </section>
   );
 }
+
 

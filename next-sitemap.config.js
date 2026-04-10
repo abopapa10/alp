@@ -42,7 +42,10 @@ module.exports = {
       path === "/manipulasyon-nedir" ||
       path === "/regresyon-nedir" ||
       path === "/kompulsif-ne-demek" ||
-      path === "/durtusel-ne-demek"
+      path === "/durtusel-ne-demek" ||
+      path === "/borderline-ne-demek" ||
+      path === "/histerik-ne-demek" ||
+      path === "/panseksuel-ne-demek"
     ) {
       return { ...base, priority: 0.75, changefreq: "monthly" };
     }
@@ -52,4 +55,5 @@ module.exports = {
     return base;
   },
 };
+
 
