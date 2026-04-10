@@ -1,4 +1,4 @@
-/** @type {import('next-sitemap').IConfig} */
+﻿/** @type {import('next-sitemap').IConfig} */
 const siteUrl =
   process.env.SITE_URL ||
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -17,7 +17,7 @@ module.exports = {
     additionalSitemaps: [],
     host: siteUrl.replace(/\/$/, ""),
   },
-  /** Arama motorları için öncelik / sıklık ince ayarı */
+  /** Arama motorlarÄ± iÃ§in Ã¶ncelik / sÄ±klÄ±k ince ayarÄ± */
   transform: async (config, path) => {
     const base = {
       loc: path,
@@ -38,7 +38,11 @@ module.exports = {
       path === "/uykuya-dalamama-neden-olur" ||
       path === "/ghosting-ne-demek" ||
       path === "/othello-sendromu" ||
-      path === "/love-bombing-nedir"
+      path === "/love-bombing-nedir" ||
+      path === "/manipulasyon-nedir" ||
+      path === "/regresyon-nedir" ||
+      path === "/kompulsif-ne-demek" ||
+      path === "/durtusel-ne-demek"
     ) {
       return { ...base, priority: 0.75, changefreq: "monthly" };
     }
@@ -48,3 +52,4 @@ module.exports = {
     return base;
   },
 };
+
