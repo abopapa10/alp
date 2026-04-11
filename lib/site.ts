@@ -3,8 +3,8 @@ const DEFAULT_GOOGLE_MAPS_PLACE =
 
 export const siteConfig = {
   name: "Psk. Ahmet Alparslan Sancar",
-  /** Ana sayfa hero H1 ile uyumlu tanım (SEO / şema). */
-  tagline: "Beşiktaş Psikolog ve Online Terapi Hizmetleri | Psk. Ahmet Alparslan Sancar",
+  /** Ana sayfa hero H1 ile uyumlu kısa tanım (şema / iç tutarlılık). */
+  tagline: "Psikoterapi & Online Danışmanlık",
   titleTemplate: "%s | Psk. Ahmet Alparslan Sancar",
   description:
     "Beşiktaş psikolog ve İstanbul psikolog arayanlar için online terapi, online psikolojik danışmanlık ve yüz yüze seans. Psikolog randevu, psikologdan randevu ve psikoloji İstanbul çapında kanıta dayalı terapi: Hacettepe mezunu Psk. Ahmet Alparslan Sancar.",
@@ -47,10 +47,11 @@ export const siteConfig = {
     DEFAULT_GOOGLE_MAPS_PLACE,
 } as const;
 
+/** Hakkımda özeti (meta / olası tekrar kullanımlar için). */
 export const aboutOpening =
-  "Hayatın getirdiği zorluklarla başa çıkarken yanınızda bilimsel kanıtlı yöntemlerle duruyorum.";
+  "Hacettepe Üniversitesi Psikoloji mezunu; 700'den fazla danışan deneyimi, birey odaklı terapi ve Beşiktaş ile online görüşmeler.";
 
 export const aboutBody =
-  "Hacettepe Üniversitesi Psikoloji Bölümü mezunu bir psikoloğum. Beşiktaş'daki kliniğimde yalnızca bilimsel olarak kanıtlanmış yöntemler (Bilişsel Davranışçı Terapi, Psikodinamik ve Birey Odaklı Terapi) ile psikoterapi hizmeti veriyorum. 500'ü aşkın danışan sayısına ulaşarak bu süreçte gurur verici sonuçlar elde ettim. İstanbul Avrupa Yakası psikolog ve online terapi arayan danışanlarla da düzenli çalışıyorum; psikolog tavsiye ve psikolog randevu sürecinde önce kısa bir ön görüşme ile beklentileri netleştirmeyi öneririm. Beşiktaş'ta güvenilir bir psikolog arıyorsanız veya psikoterapi randevusu almak istiyorsanız, benimle iletişime geçebilirsiniz.";
+  "Birey Odaklı Psikoterapi temelli çalışıyor; ihtiyaca göre psikodinamik ve BDT tekniklerini entegre ediyorum.";
 
 export const aboutExcerpt = `${aboutOpening} ${aboutBody}`;

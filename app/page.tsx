@@ -7,7 +7,7 @@ import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { HomeBlogTeaser } from "@/components/sections/HomeBlogTeaser";
-import { HomePageSeoFooter } from "@/components/sections/HomePageSeoFooter";
+import { PsychotherapyFoundationsSection } from "@/components/sections/PsychotherapyFoundationsSection";
 import { homeServices } from "@/lib/services";
 import { LocalBusinessJsonLd, PsychologistJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
@@ -74,7 +74,7 @@ export default function HomePage() {
       <FAQAccordion />
       <HomeBlogTeaser />
       <ContactSection />
-      <HomePageSeoFooter />
+      <PsychotherapyFoundationsSection />
     </>
   );
 }
