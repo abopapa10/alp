@@ -11,34 +11,34 @@ export const serviceSeoFaqs: Record<
 > = {
   "cift-evlilik-terapisi": [
     {
+      question: "Eşim terapiye gelmek istemiyor, tek başıma gelebilir miyim?",
+      answer:
+        "Evet; birçok süreç tek partnerle de başlayabilir. Bireysel görüşmelerde ilişki örüntüleri, iletişim becerileri ve güvenli davet yolları üzerinde çalışılabilir. Çift terapisinin tam etkisi genelde her iki tarafın katılımıyla güçlenir; partnerinizin hazır olmadığı dönemde de ilk adım atmanız anlamlıdır.",
+    },
+    {
+      question: "Çift terapisi ne kadar sürer?",
+      answer:
+        "Süre hedeflere, çatışmanın yoğunluğuna ve güven ihlali gibi temalara göre değişir. Bazı çiftler birkaç aylık odaklı çalışma ile ilerlerken, uzun süreli döngülerde daha uzun dönem planı yapılabilir. Seans süresi genelde 50 dakikadır; sıklık birlikte belirlenir.",
+    },
+    {
+      question: "Terapiye başlamak için ilişkinin bitme noktasına gelmesi mi gerekir?",
+      answer:
+        "Hayır. Erken başvuru, mesafe ve tartışma döngüleri henüz sıkılaşmadan müdahale etmeyi kolaylaştırır. Kriz döneminde gelmek de yaygındır; her iki durumda da terapi, ilişkiyi “kurtarma garantisi” değil, güvenli bir çalışma alanı sunar.",
+    },
+    {
+      question: "Seanslarda taraflardan birinin haklılığı mı aranır?",
+      answer:
+        "Hayır. Etik çerçevede terapist taraf tutmaz ve ‘kazanan’ belirlemez. Amaç, haklılık yarışı yerine duygu ve ihtiyaçların duyulması, tekrarlayan döngülerin adlandırılması ve ortak onarım adımlarının pratik edilmesidir.",
+    },
+    {
       question: "Çift terapisi ilk seansta neler olur?",
       answer:
-        "Oturma düzeni, gizlilik ve ortak hedefler konuşulur; her iki tarafın da güvenli şekilde konuşabilmesi için çerçeve çizilir. İlk görüşmede ilişki öyküsü, şikayet başlıkları ve beklentiler dinlenir; henüz derin müdahale yerine değerlendirme ve yön önerisi öne çıkar.",
-    },
-    {
-      question: "Evlilik terapisi ne kadar sürer?",
-      answer:
-        "Süre çiftin hedeflerine ve çatışmanın yoğunluğuna göre değişir. Bazı çiftler kısa süreli odaklı çalışma ile ilerlerken, güven ihlali veya uzun süreli iletişim kırıklığında daha uzun dönem planlanabilir. Seanslar genelde 50 dakikadır.",
-    },
-    {
-      question: "Çift terapisti ile bireysel terapi arasında ne zaman seçim yapılır?",
-      answer:
-        "İlişki dinamikleri merkezdeyse çift oturumu uygundur. Bazen taraflardan biri için paralel bireysel destek önerilebilir; bu karar şeffaf biçimde ve çiftin onayıyla ele alınır.",
+        "Oturma düzeni, gizlilik ve ortak hedefler konuşulur; her iki tarafın güvenle konuşabilmesi için çerçeve çizilir. İlk görüşmede ilişki öyküsü, şikâyet başlıkları ve beklentiler dinlenir; derin müdahaleden çok değerlendirme ve yön önerisi öne çıkar.",
     },
     {
       question: "Beşiktaş’ta yüz yüze çift terapisi mümkün mü?",
       answer:
-        "Evet; klinikte yüz yüze seans planlanabilir. İstanbul dışından katılan çiftler veya yoğun program nedeniyle online terapi tercih edenler için çevrim içi format da değerlendirilebilir.",
-    },
-    {
-      question: "Çift terapisinde ‘kazanan’ taraf olur mu?",
-      answer:
-        "Etik çerçevede terapist taraf tutmaz; ilişkinin güvenliği ve her iki kişinin de duyulması hedeflenir. Çözüm, genellikle ortak iletişim kalıplarının dönüşümü üzerinden ilerler.",
-    },
-    {
-      question: "İletişim kopukluğu için çift terapisi işe yarar mı?",
-      answer:
-        "Araştırmalar yapılandırılmış çift müdahalelerinin iletişim ve ilişki memnuniyetinde iyileşmeye katkısını gösterir. Sonuç, çiftin motivasyonu ve sürekliliğiyle de ilişkilidir.",
+        "Evet; klinikte yüz yüze seans planlanabilir. İstanbul dışından veya yoğun program nedeniyle online terapi tercih eden çiftler için çevrim içi format da değerlendirilebilir.",
     },
   ],
   "panik-atak-anksiyete": [

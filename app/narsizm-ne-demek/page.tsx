@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title: "Narsizm Nedir? Freud, Kohut ve Kernberg ile Akademik Rehber | Psk. Ahmet Alparslan Sancar",
+  title: "Narsizm - Kohut ve Kernberg",
   description:
     "Narsizm nedir? Heinz Kohut narsizm kuramı, narsistik kişilik bozukluğu, narsistik yaralanma ve narsist belirtileri üzerine bilimsel ve kapsamlı rehber.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/narsizm-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Narsizm Nedir? Kendilik Regülasyonu ve Patolojik Narsizm",
+    title: `Narsizm - Kohut ve Kernberg | ${siteConfig.name}`,
     description:
       "Freud (1914), Kohut (1971) ve Kernberg (1975) perspektifleriyle narsizmi akademik derinlikte ele alan rehber.",
     url: `${siteConfig.url}/narsizm-ne-demek`,

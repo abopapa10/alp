@@ -51,12 +51,13 @@ const homeKeywords = [
 ];
 
 export const metadata: Metadata = {
-  title: "Beşiktaş Psikolog ve Online Terapi | Psk. Ahmet Alparslan Sancar",
+  /** Şablon: "%s | Psk. Ahmet Alparslan Sancar" — marka yalnızca sonda bir kez. */
+  title: "Beşiktaş Psikolog - Online",
   description: siteConfig.description,
   keywords: homeKeywords,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Beşiktaş Psikolog ve Online Terapi | Psk. Ahmet Alparslan Sancar",
+    title: `Beşiktaş Psikolog - Online | ${siteConfig.name}`,
     description: siteConfig.description,
     url: siteConfig.url,
   },

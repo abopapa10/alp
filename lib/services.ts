@@ -89,9 +89,9 @@ export const homeServices = services.filter((s) =>
 );
 
 export const onlineTerapiMeta = {
-  title: "Online Terapi ve Online Psikolog Randevusu",
+  title: "Online Psikolog ve Terapi",
   description:
-    "Online psikolog randevusu, online terapi ve online psikoterapi ile İstanbul ve Türkiye genelinde esnek seans planı. KVKK uyumlu görüşme altyapısı önerisi.",
+    "Online psikolog randevusu, online terapi ve online psikoterapi ile İstanbul ve Türkiye genelinde esnek seans planı. Güvenli görüşme ortamı ve randevu disiplini önerisi.",
   keywords:
     "online psikolog randevu, online terapi, online psikolog tavsiye, online psikolojik danışmanlık, online psikoterapi, online psikolog, online psikoterapi merkezi",
 };

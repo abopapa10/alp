@@ -22,7 +22,7 @@ import {
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tükenmişlik Sendromu (Burnout) Nedir? Belirtileri ve Bilimsel Çerçeve | Psk. Ahmet Alparslan Sancar",
+  title: "Tükenmişlik Sendromu - Özet",
   description:
     "Tükenmişlik sendromu nedir, burnout belirtileri nelerdir? ICD-11, Maslach boyutları, mesleki stres, duygusal tükenme ve iyileşme — bilgilendirici akademik özet.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/tukenmislik-sendromu" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Tükenmişlik Sendromu (Burnout) | Psk. Ahmet Alparslan Sancar",
+    title: `Tükenmişlik Sendromu - Özet | ${siteConfig.name}`,
     description:
       "Burnout ve tükenmişlik sendromu: belirtiler, bilimsel çerçeve ve profesyonel destek.",
     url: `${siteConfig.url}/tukenmislik-sendromu`,

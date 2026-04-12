@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title: "Dürtüsel Ne Demek? Dürtüsellik Nedir ve Nasıl Yönetilir? | Psk. Ahmet Alparslan Sancar",
+  title: "Dürtüsel Ne Demek? Yönetim",
   description:
     "Dürtüsel ne demek? Dürtüsellik nedir, dürtüsel davranış örnekleri, Freud haz ilkesi, prefrontal korteks-limbik sistem dengesi ve dürtü kontrolü teknikleri.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/durtusel-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Dürtüsellik Rehberi: Dürtüsel Davranışları Bilimsel Anlamak",
+    title: `Dürtüsel Ne Demek? Yönetim | ${siteConfig.name}`,
     description:
       "Psikanalitik, nöropsikolojik ve bilişsel davranışçı çerçevede dürtüsellik: neden olur, nasıl yönetilir?",
     url: `${siteConfig.url}/durtusel-ne-demek`,

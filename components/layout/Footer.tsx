@@ -28,23 +28,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/#hizmetler" className="hover:text-white">
+                  Hizmetler
+                </Link>
+              </li>
+              <li>
                 <Link href="/narsizm-ne-demek" className="hover:text-white">
                   Narsizm ne demek?
-                </Link>
-              </li>
-              <li>
-                <Link href="/kvkk" className="hover:text-white">
-                  KVKK
-                </Link>
-              </li>
-              <li>
-                <Link href="/gizlilik-politikasi" className="hover:text-white">
-                  Gizlilik Politikası
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerez-politikasi" className="hover:text-white">
-                  Çerez Aydınlatması
                 </Link>
               </li>
             </ul>

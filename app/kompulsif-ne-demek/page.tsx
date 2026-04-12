@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title: "Kompulsif Ne Demek? Obsesyon ve Kompulsiyon Farkı | Psk. Ahmet Alparslan Sancar",
+  title: "Kompulsif Ne Demek? OKB Farkı",
   description:
     "Kompulsif ne demek? Obsesif ve kompulsif farkı, kompulsif davranış örnekleri, OKB savunma mekanizmaları ve nörobiyolojik temel üzerine bilimsel rehber.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/kompulsif-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Kompulsif Ne Demek? OKB'de Takıntı ve Zorlantı Rehberi",
+    title: `Kompulsif Ne Demek? OKB Farkı | ${siteConfig.name}`,
     description:
       "Obsesyon-kompulsiyon ayrımı, Freud ve Salkovskis kuramı, Brain Lock modeli ve ERP tedavisi üzerine kapsamlı içerik.",
     url: `${siteConfig.url}/kompulsif-ne-demek`,

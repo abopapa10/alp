@@ -17,7 +17,7 @@ export type ServicePageData = {
 
 export const servicePages: Record<string, ServicePageData> = {
   "cift-evlilik-terapisi": {
-    metaTitle: "Çift Terapisti ve Evlilik Terapisi | Beşiktaş",
+    metaTitle: "Çift Terapisi - Beşiktaş",
     metaDescription:
       "İlişki terapisi, çift terapisi ve evlilik danışmanlığı için Beşiktaş’ta randevu. İletişimi güçlendirmeye odaklı, kanıta dayalı oturumlar.",
     keywords:
@@ -58,8 +58,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "panik-atak-anksiyete": {
-    metaTitle:
-      "Panik Atak Anında Ne Yapılır? Anksiyete, Sosyal Fobi, Agorafobi | İstanbul Psikolog",
+    metaTitle: "Panik Atak Terapisi - Beşiktaş",
     metaDescription:
       "Panik atak anında ne yapılmalı, kalp krizi farkı, anksiyete bozukluğu nasıl geçer? Sosyal fobi ve agorafobi hakkında bilgi; Beşiktaş panik atak psikolog ve BDT desteği.",
     keywords:
@@ -108,7 +107,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "travma-terapisi": {
-    metaTitle: "TSSB Nedir? Travma Sonrası Stres ve Travma Terapisi | Beşiktaş",
+    metaTitle: "TSSB Nedir? ve Travma Terapisi",
     metaDescription:
       "Travma sonrası stres bozukluğu (TSSB) nedir, belirtileri nelerdir? Travma terapisi, EMDR ve BDT ile Beşiktaş’ta yüz yüze ve online travma psikolog desteği.",
     keywords:
@@ -145,7 +144,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "ergen-sinav-kaygisi": {
-    metaTitle: "Ergen Psikoloğu ve Sınav Kaygısı | İstanbul",
+    metaTitle: "Sınav Kaygısı Ergen Terapisi",
     metaDescription:
       "Ergen psikoloğu İstanbul randevusu, ergen psikolog tavsiye ve sınav kaygısı psikolog desteği. Sınav stresini yönetme ve özgüven odaklı çalışma.",
     keywords:
@@ -182,7 +181,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "ofke-kontrolu": {
-    metaTitle: "Öfke Kontrol Bozukluğu ve Öfke Terapisi | İstanbul Psikolog",
+    metaTitle: "Öfke Terapisi - Beşiktaş",
     metaDescription:
       "Öfke kontrol bozukluğu nasıl anlaşılır? Öfke kontrolü terapisi, BDT ve psikolog desteği ile tetikleyicileri tanıma, iletişim becerileri ve duygu düzenleme.",
     keywords:
@@ -223,7 +222,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
   },
   "depresyon-terapisi": {
-    metaTitle: "Depresyon Terapisi ve Depresyon Psikolog | Beşiktaş",
+    metaTitle: "Depresyon Terapisi - Beşiktaş",
     metaDescription:
       "Depresyon terapisi ile enerji, ilgi ve özgüven kaybını anlamlandırma; depresyon psikolog eşliğinde adım adım hedefler.",
     keywords: "depresyon terapisi, depresyon psikolog",

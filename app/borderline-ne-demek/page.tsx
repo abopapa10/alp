@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title: "Borderline Ne Demek? Kernberg, Linehan ve Masterson ile Kapsamlı Rehber | Psk. Ahmet Alparslan Sancar",
+  title: "Borderline Nedir? DBT ve TFP",
   description:
     "Borderline ne demek? Sınır kişilik bozukluğu nedir, borderline belirtileri, splitting, Kernberg kuramı, borderline ve ilişkiler, DBT ve TFP farkları.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/borderline-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Borderline Ne Demek? Sınır Kişilik Örgütlenmesini Anlamak",
+    title: `Borderline Nedir? DBT ve TFP | ${siteConfig.name}`,
     description:
       "Kernberg, Linehan ve Masterson çerçevesiyle borderline kişilik örüntüsünü bilimsel derinlikte açıklayan rehber.",
     url: `${siteConfig.url}/borderline-ne-demek`,

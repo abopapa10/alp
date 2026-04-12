@@ -20,7 +20,7 @@ export function OnlineTherapyBanner() {
               Dünyanın her yerinden, evinizin konforunda terapiye başlayın.
             </p>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/90 md:text-base">
-              KVKK ve gizlilik önceliğiyle güvenli görüşme alışkanlıkları; esnek{" "}
+              Mesleki gizlilik ve güvenli görüşme alışkanlıkları; esnek{" "}
               <strong className="font-semibold text-white">psikolog randevu</strong> planı ile süreklilik.
               Online terapi ücretleri ve seans koşulları hakkında bilgi için iletişime geçebilirsiniz.
             </p>

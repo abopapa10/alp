@@ -7,8 +7,7 @@ import { buildOthelloFaqJsonLd, othelloFaqs } from "@/lib/othello-faq";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Othello Sendromu Nedir? Aşırı Kıskançlık ve Sanrısal Kıskançlık | Psk. Ahmet Alparslan Sancar",
+  title: "Othello Sendromu - Kıskançlık",
   description:
     "Othello sendromu (aşırı kıskançlık hastalığı) ve sanrısal kıskançlık nedir? Belirtiler, normal kıskançlıktan farkı, ilişkide etkileri ve profesyonel destek. Beşiktaş ve online terapi bilgilendirmesi.",
   keywords: [
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/othello-sendromu" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Othello Sendromu ve Sanrısal Kıskançlık",
+    title: `Othello Sendromu - Kıskançlık | ${siteConfig.name}`,
     description:
       "Aşırı kıskançlık ve Othello sendromu hakkında genel bilgilendirme; tanı koymaz, uzman görüşmesinin yerini tutmaz.",
     url: `${siteConfig.url}/othello-sendromu`,

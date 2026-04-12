@@ -6,8 +6,7 @@ import { buildHisterikFaqJsonLd, histerikFaqs } from "@/lib/histerik-faq";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Histerik Ne Demek? Histeri Nedir, Freud, Konversiyon ve Histriyonik Kişilik | Psk. Ahmet Alparslan Sancar",
+  title: "Histerik Ne Demek? Kısa Rehber",
   description:
     "Histerik ne demek, histeri nedir? Yunanca hystera kökeni, Freud histeri teorisi, konversiyon bozukluğu, histriyonik kişilik bozukluğu ve histeri belirtileri hakkında kapsamlı rehber.",
   keywords: [
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/histerik-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Histerik Ne Demek? Tarihten Güncel Tanılara Histeri Rehberi",
+    title: `Histerik Ne Demek? Kısa Rehber | ${siteConfig.name}`,
     description:
       "Rahim mitinden Charcot ve Freud'a, konversiyon ve histriyonik kişilik bozukluğuna uzanan bilimsel ve psikodinamik yolculuk.",
     url: `${siteConfig.url}/histerik-ne-demek`,

@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title: "Regresyon Nedir? Psikolojide Regresyon ve Savunma Mekanizması Rehberi | Psk. Ahmet Alparslan Sancar",
+  title: "Regresyon Nedir? Kısa Rehber",
   description:
     "Regresyon nedir? Psikolojide regresyon, savunma mekanizması olarak regresyon, yetişkinlerde regresyon belirtileri ve Freudyen kuramla bilimsel açıklama.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/regresyon-nedir" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Regresyon Nedir? Psikolojide Bilimsel Rehber",
+    title: `Regresyon Nedir? Kısa Rehber | ${siteConfig.name}`,
     description:
       "Regresyonu Freud, Anna Freud ve modern psikodinamik çerçeveyle açıklayan kapsamlı rehber.",
     url: `${siteConfig.url}/regresyon-nedir`,

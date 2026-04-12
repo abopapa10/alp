@@ -1,28 +1,23 @@
 export const ghostingFaqs = [
   {
-    question: "Ghosting ne demek?",
+    question: "Ghosting yapan kişiye mesaj atıp hesap sormalı mıyım?",
     answer:
-      "Ghosting; ilişki veya iletişim sürecinde karşı tarafın uyarı veya açıklama olmadan mesajları yanıtlamayı kesmesi, görüşmeyi aniden sonlandırması ve dijital olarak ‘ortadan kaybolması’ olarak tanımlanır. Romantik ilişkilerde sık anılır; arkadaşlık ve iş bağlamında da görülebilir.",
+      "Tek bir kural yoktur; ancak tekrarlayan, aşağılayıcı veya suçlayıcı mesaj yağmuru genelde belirsizliği artırır ve sizin özsaygınızı daha çok yıpratır. Bir kez net ve saygılı bir kapanış cümlesi yazmak doğal bir ihtiyaçtır; karşılık gelmezse, süregiden ‘hesap sorma’ döngüsü yerine sınır koymayı düşünmek iyileşmeyi destekler. Terapide bu kararı vicdanınızla öz-değeriniz arasında dengeleyecek şekilde işleyebilirsiniz.",
   },
   {
-    question: "Ghosting neden yapılır?",
+    question: "Ghosting psikolojik bir şiddet midir?",
     answer:
-      "Nedenler kişiye göre değişir: çatışmadan kaçınma, yüzleşme kaygısı, ilişkiyi bitirmenin utanç veya suçluluk uyandırması, yeni bir ilişkiye yönelme veya yoğunluk/stres. Bazen değil, karşı tarafın duygusal olarak hazır olmaması veya iletişim becerisi eksikliği rol oynar. Açıklama yapmamak genellikle karşı taraf için daha fazla yaralanma yaratır.",
+      "Ghosting her bağlamda aynı şiddette yaşanmaz; ancak güç ve kontrol dinamikleri içinde, tehdit edici bir örüntünün parçası olarak veya kişiyi kasıtlı olarak belirsizlikte bırakmak için kullanıldığında psikolojik zarar ciddi olabilir. Bazı çalışmalarda dijital reddedilme ve iletişimin kesilmesi, kaygı ve depresif belirtilerle ilişkilendirilir. Yaşadığınız etki sizin için geçerliyse bunu küçümsemek zorunda değilsiniz; destek almak anlamlıdır.",
   },
   {
-    question: "Ghosting psikolojik olarak ne yapar?",
+    question: "Aylarca süren bir ilişkide ghosting neden yaşanır?",
     answer:
-      "Belirsizlik ve reddedilme algısı özsaygıyı sarsabilir; kaygı, tekrarlayan kontrol davranışları (mesajı okundu mu diye bakma) ve yas sürecinin kesintiye uğraması sık görülür. Travma düzeyinde etki herkeste aynı değildir; destek almak faydalı olabilir.",
+      "Uzun ilişkilerde ghosting sıklıkla tek bir nedene indirgenemez. Bağlanma kaygısı, çatışmadan kaçınma, başka bir ilişkiye yönelme, depresyon veya utanç, aile/iş stresi ve iletişim becerisi eksikliği bir arada rol oynayabilir. Süre uzadıkça belirsizlik daha ağır hissedilebilir; bu yüzden klinik destekle yas ve öz-değer çalışması özellikle faydalı olabilir.",
   },
   {
-    question: "Ghosting yapan kişiye nasıl yaklaşılmalı?",
+    question: "Bu travmayı atlatmam ne kadar sürer?",
     answer:
-      "Tek taraflı mesaj yağmuruna ve sürekli takibe girmeden önce sınır koymak önemlidir. ‘Açıklama hakkım var’ düşüncesi doğal olsa da kontrol sizde değilse enerjinizi kendinize döndürmek iyileşmeyi hızlandırabilir. Terapide bu süreç işlenebilir.",
-  },
-  {
-    question: "Ghosting sonrası ne zaman psikolog desteği alınmalı?",
-    answer:
-      "Uyku, iştah, iş veya sosyal işlevsellikte belirgin düşüş, sürekli suçluluk veya umutsuzluk varsa profesyonel destek düşünülmelidir. Beşiktaş klinikte veya online terapi ile yas, sınır ve öz-değer üzerine çalışılabilir.",
+      "Süre kişiye, ilişkinin anlamı, önceki yaralar ve destek kaynaklarına göre değişir. Bazı kişiler birkaç hafta içinde belirgin rahatlama bildirirken, tekrarlayan ghosting öyküleri veya eşlik eden kaygı-depresyon tablosunda süre uzayabilir. Terapi düzenli olduğunda daha öngörülebilir bir tempo oluşur; iyileşme ‘çizgisel’ olmayabilir, dalgalı ilerlemek normaldir.",
   },
 ] as const;
 

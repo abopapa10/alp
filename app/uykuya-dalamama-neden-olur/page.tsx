@@ -15,7 +15,7 @@ import { buildUykuyaDalamamaFaqJsonLd, uykuyaDalamamaFaqs } from "@/lib/uykuya-d
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Uykuya Dalamama (İnsomnia) Neden Olur? Psikolojik Çözümler | Psk. Ahmet Alparslan Sancar",
+  title: "İnsomnia ve Uykuya Dalamama",
   description:
     "Uykuya dalamama nedenleri, insomnia nedir, uyku hijyeni ve BDT-U. Uykusuzluk için psikolog, uyku bozukluğu tedavisi Beşiktaş ve online terapi — bilgilendirici rehber.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/uykuya-dalamama-neden-olur" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Uykuya Dalamama ve İnsomnia | Psikolojik Çözümler",
+    title: `İnsomnia ve Uykuya Dalamama | ${siteConfig.name}`,
     description:
       "Uykusuzluk, uyku hijyeni ve terapi seçenekleri — sakin ve okunaklı bilgilendirme.",
     url: `${siteConfig.url}/uykuya-dalamama-neden-olur`,

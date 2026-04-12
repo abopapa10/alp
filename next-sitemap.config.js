@@ -49,9 +49,6 @@ module.exports = {
     ) {
       return { ...base, priority: 0.75, changefreq: "monthly" };
     }
-    if (path === "/kvkk" || path === "/gizlilik-politikasi" || path === "/cerez-politikasi") {
-      return { ...base, priority: 0.4, changefreq: "yearly" };
-    }
     return base;
   },
 };

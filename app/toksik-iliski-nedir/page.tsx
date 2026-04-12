@@ -21,7 +21,7 @@ import { buildToksikIliskiFaqJsonLd, toksikIliskiFaqs } from "@/lib/toksik-ilisk
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Toksik İlişki Nedir? Belirtileri ve Çözümleri | Psk. Ahmet Alparslan Sancar",
+  title: "Toksik İlişki - Belirtiler",
   description:
     "Toksik ilişki nedir, toksik ilişki belirtileri nelerdir? Gaslighting ne demek, love bombing ve manipülasyon teknikleri. Duygusal istismar, narsist ilişki ve sağlıklı sınırlar hakkında bilgilendirici rehber.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/toksik-iliski-nedir" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Toksik İlişki Nedir? Belirtileri ve Kurtulma | Psk. Ahmet Alparslan Sancar",
+    title: `Toksik İlişki - Belirtiler | ${siteConfig.name}`,
     description:
       "Toksik ilişki belirtileri, gaslighting, manipülasyon ve iyileşme yolları — genel bilgilendirme.",
     url: `${siteConfig.url}/toksik-iliski-nedir`,

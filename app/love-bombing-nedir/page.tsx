@@ -8,7 +8,7 @@ import { buildLoveBombingFaqJsonLd, loveBombingFaqs } from "@/lib/love-bombing-f
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Love Bombing Nedir? Aşk Bombardımanı Belirtileri ve Manipülasyon | Psk. Ahmet Alparslan Sancar",
+  title: "Love Bombing Nedir? - Çözüm",
   description:
     "Love bombing (aşk bombardımanı) nedir, belirtileri nelerdir? Sağlıklı ilgiden farkı, ilişkide manipülasyon ve iyileşme. Genel bilgilendirme; Beşiktaş ve online terapi.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/love-bombing-nedir" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Love Bombing (Aşk Bombardımanı) Nedir?",
+    title: `Love Bombing Nedir? - Çözüm | ${siteConfig.name}`,
     description:
       "Aşk bombardımanı ve ilişkide yoğun ilgi örüntüleri hakkında özet bilgilendirme metni.",
     url: `${siteConfig.url}/love-bombing-nedir`,

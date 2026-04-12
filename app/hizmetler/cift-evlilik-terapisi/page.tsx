@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ServicePageView } from "@/components/templates/ServicePageView";
+import { CiftEvlilikTerapisiPageView } from "@/components/templates/CiftEvlilikTerapisiPageView";
 import { generateServicePageMetadata } from "@/lib/service-metadata";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -7,5 +7,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function CiftEvlilikTerapisiPage() {
-  return <ServicePageView slug="cift-evlilik-terapisi" />;
+  return <CiftEvlilikTerapisiPageView />;
 }

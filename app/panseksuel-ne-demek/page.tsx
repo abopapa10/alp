@@ -6,8 +6,7 @@ import { buildPanseksuelFaqJsonLd, panseksuelFaqs } from "@/lib/panseksuel-faq";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title:
-    "Panseksüel Ne Demek? Panseksüel Nedir, Bi Farkı, Kinsey ve Butler | Psk. Ahmet Alparslan Sancar",
+  title: "Panseksüel Ne Demek? Bi Farkı",
   description:
     "Panseksüel ne demek, panseksüel nedir? Panseksüel ve biseksüel farkı, cinsel yönelim türleri, panseksüel kime denir; Kinsey, queer teori ve kapsayıcı psikoloji rehberi.",
   keywords: [
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/panseksuel-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Panseksüel Ne Demek? Kapsayıcı ve Bilimsel Rehber",
+    title: `Panseksüel Ne Demek? Bi Farkı | ${siteConfig.name}`,
     description:
       "Gender-blind çekim, biseksüellikten ayrım, Kinsey spektrumu ve Judith Butler ile queer teori bağlamında panseksüellik.",
     url: `${siteConfig.url}/panseksuel-ne-demek`,

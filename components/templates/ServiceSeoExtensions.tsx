@@ -65,10 +65,10 @@ export function ServiceSeoExtensions({ slug }: { slug: ServiceSeoSlug }) {
               key={item.question}
               className="group rounded-xl border border-slate-200 bg-white px-4 py-1 shadow-sm open:shadow-md"
             >
-              <summary className="flex min-h-11 cursor-pointer list-none items-center py-3 text-left font-semibold text-brand-navy marker:hidden [&::-webkit-details-marker]:hidden">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center py-3 text-left text-base font-semibold text-brand-navy md:text-lg marker:hidden [&::-webkit-details-marker]:hidden">
                 {item.question}
               </summary>
-              <p className="pb-4 text-sm leading-relaxed text-slate-700 md:text-[15px] md:leading-relaxed">
+              <p className="pb-4 text-base leading-relaxed text-slate-700 md:text-lg md:leading-relaxed">
                 {item.answer}
               </p>
             </details>

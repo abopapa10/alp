@@ -8,8 +8,7 @@ import { siteConfig } from "@/lib/site";
 /* eslint-disable react/no-unescaped-entities */
 
 export const metadata: Metadata = {
-  title:
-    "Manipülasyon Nedir? Duygusal, Cinsel ve Sosyal Manipülasyon Rehberi | Psk. Ahmet Alparslan Sancar",
+  title: "Manipülasyon ve Gaslighting",
   description:
     "Manipülasyon nedir? Duygusal, cinsel ve sosyal manipülasyon teknikleri; gaslighting, love bombing, ghosting, breadcrumbing, sinir sistemi etkileri ve sınır koyma stratejileri.",
   keywords: [
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/manipulasyon-nedir" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Manipülasyon Rehberi: Duygusal, Cinsel ve Sosyal Boyutlar",
+    title: `Manipülasyon ve Gaslighting | ${siteConfig.name}`,
     description:
       "Akademik temelli, klinik çerçevede kapsamlı manipülasyon rehberi: kuramlar, teknikler, sinir sistemi ve korunma stratejileri.",
     url: `${siteConfig.url}/manipulasyon-nedir`,

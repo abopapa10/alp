@@ -37,11 +37,13 @@ export default function OnlineTerapiPage() {
           </p>
         </section>
         <section>
-          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Gizlilik ve KVKK</h2>
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">
+            Güvenli ve mahrem ortam
+          </h2>
           <p className="mt-3 text-slate-700 leading-relaxed">
-            Online psikolojik danışmanlık hizmetinde veri güvenliği için güvenilir platformlar tercih edilmeli ve
-            ortamın dinlenmeye kapalı olduğundan emin olunmalıdır. Detaylar için çerez ve gizlilik sayfalarımıza
-            göz atabilirsiniz.
+            Görüntülü görüşmelerde güvenilir platformlar tercih edilmeli, ortamın dinlenmeye kapalı olduğundan emin
+            olunmalıdır. Seans içeriği mesleki gizlilik ve etik kurallar çerçevesinde ele alınır; ilk görüşmede
+            format ve acil durum planlaması birlikte netleştirilir.
           </p>
         </section>
       </section>

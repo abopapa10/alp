@@ -6,13 +6,14 @@ import { siteConfig } from "@/lib/site";
 export function servicePageMetadata(slug: keyof typeof servicePages): Metadata {
   const data = servicePages[slug];
   const url = `${siteConfig.url}/hizmetler/${slug}`;
+  const ogTitle = `${data.metaTitle} | ${siteConfig.name}`;
   return {
     title: data.metaTitle,
     description: data.metaDescription,
     keywords: data.keywords.split(",").map((k) => k.trim()),
     alternates: { canonical: `/hizmetler/${slug}` },
     openGraph: {
-      title: data.metaTitle,
+      title: ogTitle,
       description: data.metaDescription,
       url,
     },
@@ -29,13 +30,14 @@ export async function generateServicePageMetadata(
 /** Online terapi sayfası */
 export async function generateOnlineTerapiMetadata(): Promise<Metadata> {
   const url = `${siteConfig.url}/online-terapi`;
+  const ogTitle = `${onlineTerapiMeta.title} | ${siteConfig.name}`;
   return {
     title: onlineTerapiMeta.title,
     description: onlineTerapiMeta.description,
     keywords: onlineTerapiMeta.keywords.split(",").map((k) => k.trim()),
     alternates: { canonical: "/online-terapi" },
     openGraph: {
-      title: onlineTerapiMeta.title,
+      title: ogTitle,
       description: onlineTerapiMeta.description,
       url,
     },
