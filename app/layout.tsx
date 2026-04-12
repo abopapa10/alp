@@ -46,7 +46,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Beşiktaş Psikolog - Online | ${siteConfig.name}`,
+    default: siteConfig.homeFullTitle,
     template: siteConfig.titleTemplate,
   },
   description: siteConfig.description,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Beşiktaş Psikolog - Online | ${siteConfig.name}`,
+    title: siteConfig.homeFullTitle,
     description: siteConfig.description,
   },
 };

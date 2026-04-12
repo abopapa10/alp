@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import { AlertTriangle, Brain, Eye, Heart, Scale, Shield } from "lucide-react";
+import { ArticlePsychologyEnrichment } from "@/components/articles/ArticlePsychologyEnrichment";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import { buildOthelloFaqJsonLd, othelloFaqs } from "@/lib/othello-faq";
@@ -86,6 +87,8 @@ export default function OthelloSendromuPage() {
           kişisel durumunuz için <strong className="text-brand-navy">psikiyatrist veya psikolog</strong>{" "}
           görüşmesi esastır.
         </p>
+
+        <ArticlePsychologyEnrichment pageId="othello" />
 
         <section className="mt-10" aria-labelledby="othello-tanim">
           <h2 id="othello-tanim" className="font-display text-xl font-bold text-brand-navy md:text-2xl">

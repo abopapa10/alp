@@ -7,6 +7,7 @@ import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { HomeBlogTeaser } from "@/components/sections/HomeBlogTeaser";
+import { HomeEnrichedPsychologySection } from "@/components/sections/HomeEnrichedPsychologySection";
 import { PsychotherapyFoundationsSection } from "@/components/sections/PsychotherapyFoundationsSection";
 import { TherapyProcessApproachSection } from "@/components/sections/TherapyProcessApproachSection";
 import { homeServices } from "@/lib/services";
@@ -51,13 +52,13 @@ const homeKeywords = [
 ];
 
 export const metadata: Metadata = {
-  /** Şablon: "%s | Psk. Ahmet Alparslan Sancar" — marka yalnızca sonda bir kez. */
-  title: "Beşiktaş Psikolog - Online",
+  /** Tam başlık; root title.template uygulanmaz. */
+  title: { absolute: siteConfig.homeFullTitle },
   description: siteConfig.description,
   keywords: homeKeywords,
   alternates: { canonical: "/" },
   openGraph: {
-    title: `Beşiktaş Psikolog - Online | ${siteConfig.name}`,
+    title: siteConfig.homeFullTitle,
     description: siteConfig.description,
     url: siteConfig.url,
   },
@@ -73,6 +74,7 @@ export default function HomePage() {
       <AboutSnippet />
       <TestimonialsMarquee />
       <OnlineTherapyBanner />
+      <HomeEnrichedPsychologySection />
       <FAQAccordion />
       <HomeBlogTeaser />
       <ContactSection />

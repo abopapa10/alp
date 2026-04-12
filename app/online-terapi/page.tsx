@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { OnlineTerapiEnrichedSection } from "@/components/sections/OnlineTerapiEnrichedSection";
 import { ServiceLayout } from "@/components/templates/ServiceLayout";
 import { generateOnlineTerapiMetadata } from "@/lib/service-metadata";
 
@@ -47,6 +48,7 @@ export default function OnlineTerapiPage() {
           </p>
         </section>
       </section>
+      <OnlineTerapiEnrichedSection />
     </ServiceLayout>
   );
 }

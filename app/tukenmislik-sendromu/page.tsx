@@ -13,6 +13,7 @@ import {
   TrendingDown,
   UserX,
 } from "lucide-react";
+import { ArticlePsychologyEnrichment } from "@/components/articles/ArticlePsychologyEnrichment";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import {
@@ -122,6 +123,8 @@ export default function TukenmislikSendromuPage() {
           araştırılan ve klinikte sık başvuru nedeni olan bir stres örüntüsüdür. Bu sayfa tanı koymaz; akademik
           ve sınıflama çerçevesinde özet bilgi sunar.
         </p>
+
+        <ArticlePsychologyEnrichment pageId="tukenmislik" />
 
         <section className="mt-10" aria-labelledby="tanim-heading">
           <h2 id="tanim-heading" className="font-display text-xl font-bold text-brand-navy md:text-2xl">

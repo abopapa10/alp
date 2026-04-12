@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { ContentCallout } from "@/components/content/ContentCallout";
 import { FiveReflectionQuestions } from "@/components/content/FiveReflectionQuestions";
+import { ArticlePsychologyEnrichment } from "@/components/articles/ArticlePsychologyEnrichment";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import { buildToksikIliskiFaqJsonLd, toksikIliskiFaqs } from "@/lib/toksik-iliski-faq";
@@ -117,6 +118,8 @@ export default function ToksikIliskiPage() {
           baskın olduğu dinamikleri anlamak isteyen danışanlar tarafından sık sorulur. Bu metin bilgilendirme
           amaçlıdır; tanı veya hukuki danışmanlık yerine geçmez.
         </p>
+
+        <ArticlePsychologyEnrichment pageId="toksik" />
 
         <section className="mt-10" aria-labelledby="tanim-heading">
           <h2 id="tanim-heading" className="font-display text-xl font-bold text-brand-navy md:text-2xl">

@@ -31,11 +31,11 @@ export function HeroSection() {
               id="hero-heading"
               className="mt-3 font-display text-[1.65rem] font-bold leading-snug tracking-tight text-brand-navy sm:text-3xl md:text-4xl md:leading-tight lg:text-[2.35rem]"
             >
-              Psikoterapi &amp; Online Danışmanlık
+              {siteConfig.homeFullTitle}
             </h1>
-            <h2 className="mt-3 text-base font-medium text-brand-navy/90 sm:text-lg md:text-xl">
-              Psk. Ahmet Alparslan Sancar | Psikolog Randevu
-            </h2>
+            <p className="mt-3 text-base font-medium text-brand-navy/90 sm:text-lg md:text-xl">
+              {siteConfig.tagline}
+            </p>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-700 sm:text-base">
               Bilimsel temelli, gizlilik ilkelerine uygun görüşmeler. Yüz yüze veya çevrim içi — size uygun formatı birlikte
               planlarız.

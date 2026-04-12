@@ -9,6 +9,7 @@ import {
   Sparkles,
   Sun,
 } from "lucide-react";
+import { ArticlePsychologyEnrichment } from "@/components/articles/ArticlePsychologyEnrichment";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import { buildUykuyaDalamamaFaqJsonLd, uykuyaDalamamaFaqs } from "@/lib/uykuya-dalamama-faq";
@@ -111,6 +112,8 @@ export default function UykuyaDalamamaPage() {
           Endişe döngüsü uyku baskısını artırır; uykuya çabaladıkça kaçan uyku hissi güçlenebilir. Bu sayfa
           bilgilendirme sunar; tanı ve tedavi planı için uzman görüşmesi önemlidir.
         </p>
+
+        <ArticlePsychologyEnrichment pageId="insomnia" />
 
         <section className="mt-12" aria-labelledby="insomnia-belirtileri">
           <h2

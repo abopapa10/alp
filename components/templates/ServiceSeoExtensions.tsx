@@ -1,5 +1,6 @@
 import { ContentCallout } from "@/components/content/ContentCallout";
 import { FiveReflectionQuestions } from "@/components/content/FiveReflectionQuestions";
+import { ServiceEnrichedBlocks } from "@/components/templates/ServiceEnrichedBlocks";
 import { ServiceFormatComparison } from "@/components/templates/ServiceFormatComparison";
 import { buildServiceSeoFaqJsonLd, serviceSeoFaqs } from "@/lib/service-seo-faqs";
 import { serviceSeoDeep } from "@/lib/service-seo-deep";
@@ -15,20 +16,24 @@ export function ServiceSeoExtensions({ slug }: { slug: ServiceSeoSlug }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
+      <ServiceEnrichedBlocks slug={slug} />
+
       <ServiceFormatComparison />
 
       <section className="mt-12" aria-labelledby={`literature-${slug}`}>
-        <h2
-          id={`literature-${slug}`}
-          className="font-display text-xl font-bold text-brand-navy md:text-2xl"
-        >
-          {deep.literature.heading}
-        </h2>
-        <div className="mt-4 max-w-3xl space-y-4 text-base leading-relaxed text-slate-700 md:text-[17px] md:leading-relaxed">
-          {deep.literature.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
-        </div>
+        <details className="group rounded-2xl border border-slate-200 bg-white px-4 py-2 shadow-sm open:shadow-md md:px-5">
+          <summary
+            id={`literature-${slug}`}
+            className="flex min-h-12 cursor-pointer list-none items-center py-3 font-display text-xl font-bold text-brand-navy marker:hidden md:text-2xl [&::-webkit-details-marker]:hidden"
+          >
+            {deep.literature.heading}
+          </summary>
+          <div className="max-w-3xl space-y-4 pb-5 text-base leading-relaxed text-slate-700 md:text-lg md:leading-relaxed">
+            {deep.literature.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+        </details>
       </section>
 
       <div className="mt-10">
