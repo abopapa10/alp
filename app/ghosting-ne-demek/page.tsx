@@ -6,7 +6,7 @@ import { buildGhostingFaqJsonLd } from "@/lib/ghosting-faq";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Ghosting Ne Demek? Belirtileri, Etkileri ve Psikolojik Çözümü",
+  title: "Ghosting Ne Demek?",
   description:
     "Ghosting ne demek? Romantik, sosyal ve profesyonel ilişkilerde iletişimin kesilmesi, Bowlby bağlanma kuramı, Zeigarnik etkisi, benlik saygısı ve Carl Rogers ile iyileşme çerçevesi. Beşiktaş ve online terapi.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/ghosting-ne-demek" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: `Ghosting Ne Demek? Belirtileri, Etkileri ve Psikolojik Çözümü | ${siteConfig.name}`,
+    title: `Ghosting Ne Demek? | ${siteConfig.name}`,
     description:
       "Ghosting tanımı, kuramsal çerçeve, benlik saygısı ve terapiyle iyileşme — bilgilendirici rehber. Beşiktaş ve online psikolojik danışmanlık.",
     url: `${siteConfig.url}/ghosting-ne-demek`,
