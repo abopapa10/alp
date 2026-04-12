@@ -22,6 +22,8 @@ type Props = {
   ctaHeading?: string;
   /** Alt CTA bandı açıklama paragrafı. */
   ctaDescription?: string;
+  /** Hero görseli alt metni (SEO / erişilebilirlik). */
+  portraitAlt?: string;
 };
 
 export function ServiceLayout({
@@ -33,6 +35,7 @@ export function ServiceLayout({
   children,
   ctaHeading = "Bu konuda destek almak için ilk adımı atın",
   ctaDescription = "Randevu veya ön görüşme için telefon veya WhatsApp üzerinden kısa bir mesaj yeterli; size en uygun zamanı birlikte planlarız.",
+  portraitAlt = `${siteConfig.name} — Beşiktaş psikolog, yüz yüze ve online terapi`,
 }: Props) {
   return (
     <>
@@ -45,7 +48,7 @@ export function ServiceLayout({
             <figure className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl border border-slate-200/80 bg-brand-sky shadow-md shadow-slate-900/10 md:mx-0 md:max-w-none">
               <Image
                 src={servicePortrait}
-                alt={`${siteConfig.name} — psikolog`}
+                alt={portraitAlt}
                 fill
                 priority
                 fetchPriority="high"

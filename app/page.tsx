@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { HomeBlogTeaser } from "@/components/sections/HomeBlogTeaser";
 import { PsychotherapyFoundationsSection } from "@/components/sections/PsychotherapyFoundationsSection";
+import { TherapyProcessApproachSection } from "@/components/sections/TherapyProcessApproachSection";
 import { homeServices } from "@/lib/services";
 import { LocalBusinessJsonLd, PsychologistJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
@@ -75,6 +76,7 @@ export default function HomePage() {
       <HomeBlogTeaser />
       <ContactSection />
       <PsychotherapyFoundationsSection />
+      <TherapyProcessApproachSection />
     </>
   );
 }

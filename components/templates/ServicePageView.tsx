@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import { ServiceLayout } from "@/components/templates/ServiceLayout";
 import { ServiceTheoreticalAccordion } from "@/components/sections/ServiceTheoreticalAccordion";
+import { ServiceSeoExtensions, type ServiceSeoSlug } from "@/components/templates/ServiceSeoExtensions";
 import { ServiceTitleIcon } from "@/components/ui/ServiceTitleIcon";
 import { services } from "@/lib/services";
 import { servicePages, type ServicePageData } from "@/lib/service-pages";
+import { siteConfig } from "@/lib/site";
 
 type Props = { slug: keyof typeof servicePages };
 
@@ -19,6 +21,7 @@ export function ServicePageView({ slug }: Props) {
       title={data.h1}
       titleIcon={<ServiceTitleIcon name={data.icon} />}
       description={data.intro}
+      portraitAlt={`${data.h1} — Beşiktaş psikolog ve online terapi | ${siteConfig.name}`}
       canonicalPath={`/hizmetler/${slug}`}
       breadcrumb={[
         { label: "Ana Sayfa", href: "/" },
@@ -48,6 +51,8 @@ export function ServicePageView({ slug }: Props) {
       </section>
 
       <ServiceTheoreticalAccordion items={data.theoreticalFoundations} instanceKey={slug} />
+
+      <ServiceSeoExtensions slug={slug as ServiceSeoSlug} />
     </ServiceLayout>
   );
 }

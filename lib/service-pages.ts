@@ -44,6 +44,14 @@ export const servicePages: Record<string, ServicePageData> = {
         body: "İletişim kopukluğu, güven sarsıntısı, yoğun tartışmalar veya birlikte alınan kararlar öncesi destek gerektiren çiftler ve evlilik terapisi arayan eşler için uygundur. Aile danışmanlığı ihtiyacı olan vakalarda da sınır ve roller üzerine çalışılabilir.",
       },
       {
+        heading: "Çatışma döngüsünü yavaşlatmak",
+        body: "Çoğu çiftte tartışma aynı tema etrafında hızlanır: yakınlık talebi bir tarafta eleştiri, diğer tarafta çekilme olarak duyulur. Terapide bu döngü yavaşlatılır; her iki tarafın da ‘koruyucu stratejileri’ (saldırganlık, sessizlik, mantıkla bastırma) anlamlandırılır. Amaç haklı çıkmak değil, güvenli temas denemeleri üretmektir.",
+      },
+      {
+        heading: "Güven ihlali sonrası süreç",
+        body: "Aldatma, yalan veya ciddi sınır ihlali sonrası çiftlerde onarım aşamaları kişiye özeldir. Erken aşamada güvenlik ve şeffaflık ihtiyaçları konuşulur; acele affetme veya sürekli suçlayıcı döngüden kaçınmak için yapılandırılmış görevler kullanılabilir. İstanbul psikoloji seansı veya online terapi ile düzenli ritim, iyileşme olasılığını artırır.",
+      },
+      {
         heading: "Randevu ve süreklilik",
         body: "Evlilik terapisi genellikle düzenli aralıklarla ilerler; ilk görüşmede hedeflerinizi dinleyip süre planını birlikte oluştururuz. Terapist tavsiye ve psikolog randevu için iletişim kanallarımız üzerinden yazabilirsiniz.",
       },
@@ -163,6 +171,14 @@ export const servicePages: Record<string, ServicePageData> = {
         heading: "Ergene uygun güvenli alan",
         body: "Gizlilik ve sınırlar ergen psikoloğu çalışmasının merkezindedir. Seans sıklığı ve hedefler ergen ile birlikte netleştirilir.",
       },
+      {
+        heading: "Akademik baskı ve öz-değer",
+        body: "Sınav sonucunu öz-değer ile özdeşleştiren ergenlerde kaygı sık yükselir. Terapide ‘başarı = değer’ inancı yumuşatılır; çaba, ilerleme ve öz-şefkat başlıkları çalışılır. Beşiktaş psikolog kliniğinde yüz yüze veya online terapi ile haftalık takip sürdürülebilir.",
+      },
+      {
+        heading: "Veli–ergen iletişimi",
+        body: "Aşırı kontrol veya tam tersi ilgisizlik her iki uçta da kaygıyı besleyebilir. Gerekirse veliye yönelik kısa danışmanlık görüşmeleri ile destekleyici iletişim cümleleri üzerinde durulur; ergenin özerkliği korunur.",
+      },
     ],
   },
   "ofke-kontrolu": {
@@ -196,6 +212,14 @@ export const servicePages: Record<string, ServicePageData> = {
         heading: "İlişki ve iş yaşamı",
         body: "Öfke kontrolü terapisi yalnızca bireysel değil, çift ve iş ortamındaki iletişimi de iyileştirebilir. Ana sayfadaki iletişim bölümünden randevu talep edebilirsiniz.",
       },
+      {
+        heading: "Öfke patlaması sonrası onarım",
+        body: "Pişmanlık ve utanç sık görülür; terapide bu duygular yargılanmadan işlenir ve mağduriyet oluşturmadan özür ve sınır cümleleri pratik edilir. Tekrarlayan döngüde Beşiktaş psikolog veya online terapi ile düzenli çalışma önerilir.",
+      },
+      {
+        heading: "Fiziksel risk ve güvenlik",
+        body: "Kendinize veya başkasına yönelik şiddet riski varsa önce güvenlik planı önceliklidir. Acil durumlarda 112 ve yerel destek hatları kullanılmalıdır; terapi bu çerçevede tamamlayıcı destek sunar.",
+      },
     ],
   },
   "depresyon-terapisi": {
@@ -219,6 +243,14 @@ export const servicePages: Record<string, ServicePageData> = {
       {
         heading: "BDT ve psikodinamik entegrasyon",
         body: "Düşünce çarpıtmalarını fark etme, davranış aktivasyonu ve bağlanma temalarını anlama depresyon terapisinde sık işlenen başlıklardır. İlk görüşmede şikayetlerinizi ve beklentilerinizi dinlerim.",
+      },
+      {
+        heading: "Depresyonun psikolojik ve davranışsal yüzü",
+        body: "Enerji kaybı, ilgi azalması, uyku ve iştah değişiklikleri, konsantrasyon güçlüğü ve değersizlik düşünceleri bir arada görülebilir. Terapide bu başlıklar ayrı ayrı ele alınır; küçük davranışsal adımlar (aktivasyon) ile düşünce çalışması birleştirilir. Şiddetli risk düşüncelerinde acil psikiyatri başvurusu önceliklidir.",
+      },
+      {
+        heading: "İlk seansta neler beklemelisiniz?",
+        body: "Güvenli çerçeve, gizlilik ve seans kuralları anlatılır; şikayet öyküsü ve güncel işlevsellik değerlendirilir. Hedefler birlikte yazılır; ‘ilk günden çözüm’ baskısı yerine sürdürülebilir tempo önerilir. İstanbul psikoloji seansı planınız yüz yüze veya online terapi olarak netleşir.",
       },
       {
         heading: "İstanbul psikolog klinikleri arayışında",

@@ -13,6 +13,8 @@ import {
   Sprout,
   UserX,
 } from "lucide-react";
+import { ContentCallout } from "@/components/content/ContentCallout";
+import { FiveReflectionQuestions } from "@/components/content/FiveReflectionQuestions";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import { buildToksikIliskiFaqJsonLd, toksikIliskiFaqs } from "@/lib/toksik-iliski-faq";
@@ -272,6 +274,46 @@ export default function ToksikIliskiPage() {
             </p>
           </div>
         </section>
+
+        <section className="mt-12" aria-labelledby="toksik-literatur">
+          <h2 id="toksik-literatur" className="font-display text-xl font-bold text-brand-navy md:text-2xl">
+            Literatürde toksik ilişki ve duygusal istismar
+          </h2>
+          <div className="mt-4 max-w-3xl space-y-4 text-base leading-relaxed text-slate-700 md:text-[17px] md:leading-relaxed">
+            <p>
+              Araştırmalar, duygusal istismarın fiziksel şiddet kadar uzun süreli ruh sağlığı yükü oluşturabileceğini
+              gösterir. Gaslighting ve <strong>manipülasyon teknikleri</strong>, mağdurun gerçeklik algısını zayıflatır;
+              bağlanma sisteminde “güvensiz liman” deneyimi pekişebilir. Bu nedenle <strong>toksik ilişki belirtileri</strong>{" "}
+              yalnızca “ilişki sorunu” değil, iyileşme ve güvenlik planı gerektiren bir başlık olarak ele alınmalıdır.
+            </p>
+            <p>
+              <strong>Beşiktaş psikolog</strong> ve <strong>online terapi</strong> ile süreç; yargısız bir dil, gizlilik
+              ve şeffaf hedeflerle yürütülür. <strong>İstanbul psikoloji seansı</strong> planı, güvenlik riski varsa önce
+              koruma önceliğiyle şekillendirilir.
+            </p>
+          </div>
+        </section>
+
+        <div className="mt-10">
+          <ContentCallout title="Mağdurun iç dünyası: kısa örnek senaryo" variant="accent">
+            <p>
+              “Her şeyi ben başlattım sanıyordum; sonra fark ettim ki sürekli kendimi küçük hissediyor, özür diliyor,
+              arkadaşlarımdan uzaklaşıyordum. Partnerim haklıymuş gibi hissettiriyordu.” Bu tür anlatılar terapide sık
+              duyulur; amaç suçlamak değil, örüntüyü netleştirip <strong>sağlıklı sınırlar</strong> inşa etmektir.
+            </p>
+          </ContentCallout>
+        </div>
+
+        <FiveReflectionQuestions
+          title="Toksik ilişki dinamiklerini düşünmek için 5 soru"
+          questions={[
+            "İhtiyaçlarınızı söylediğinizde genelde ne tür bir yanıt alıyorsunuz?",
+            "İlişki başladıktan sonra özsaygınız ve sosyal çevreniz nasıl değişti?",
+            "‘Sorun bende’ düşüncesi gününüzün ne kadarında yer kaplıyor?",
+            "Güvende hissetmediğiniz anları not ettiğinizde tekrar eden tema var mı?",
+            "Yardım istemek size ‘hak etmek’ gibi mi geliyor; bunu sorgulamak ister misiniz?",
+          ]}
+        />
 
         <section className="mt-12" aria-labelledby="sss-heading">
           <h2 id="sss-heading" className="font-display text-xl font-bold text-brand-navy md:text-2xl">

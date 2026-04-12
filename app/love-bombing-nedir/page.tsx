@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ComponentType } from "react";
 import { Gift, Heart, MessageCircleHeart, Sparkles, UserX } from "lucide-react";
+import { LoveBombingDeepSections } from "@/components/articles/LoveBombingDeepSections";
 import { LegalDocumentShell } from "@/components/legal/LegalDocumentShell";
 import { CTAGroup } from "@/components/ui/CTAGroup";
 import { buildLoveBombingFaqJsonLd, loveBombingFaqs } from "@/lib/love-bombing-faq";
@@ -157,6 +158,8 @@ export default function LoveBombingNedirPage() {
             klinikte veya <strong>online terapi</strong> ile randevu planlayabilirsiniz.
           </p>
         </section>
+
+        <LoveBombingDeepSections />
 
         <section className="mt-10" aria-labelledby="lb-sss">
           <h2 id="lb-sss" className="font-display text-xl font-bold text-brand-navy md:text-2xl">

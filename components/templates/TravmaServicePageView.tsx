@@ -1,10 +1,12 @@
 import type { ComponentType } from "react";
 import { Frown, RotateCcw, ShieldOff, Zap } from "lucide-react";
 import { ServiceLayout } from "@/components/templates/ServiceLayout";
+import { ServiceSeoExtensions } from "@/components/templates/ServiceSeoExtensions";
 import { ServiceTheoreticalAccordion } from "@/components/sections/ServiceTheoreticalAccordion";
 import { ServiceTitleIcon } from "@/components/ui/ServiceTitleIcon";
 import { services } from "@/lib/services";
 import { servicePages } from "@/lib/service-pages";
+import { siteConfig } from "@/lib/site";
 
 const slug = "travma-terapisi" as const;
 
@@ -45,6 +47,7 @@ export function TravmaServicePageView() {
       title={data.h1}
       titleIcon={<ServiceTitleIcon name={data.icon} />}
       description={data.intro}
+      portraitAlt={`TSSB ve travma terapisi — Beşiktaş psikolog, online terapi | ${siteConfig.name}`}
       canonicalPath={`/hizmetler/${slug}`}
       breadcrumb={[
         { label: "Ana Sayfa", href: "/" },
@@ -116,6 +119,8 @@ export function TravmaServicePageView() {
       </section>
 
       <ServiceTheoreticalAccordion items={data.theoreticalFoundations} instanceKey={slug} />
+
+      <ServiceSeoExtensions slug="travma-terapisi" />
     </ServiceLayout>
   );
 }
