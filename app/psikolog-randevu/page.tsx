@@ -42,9 +42,9 @@ export default function PsikologRandevuPage() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <a href="/" className="text-sm font-semibold text-brand-navy sm:text-base">
+          <Link href="/" className="text-sm font-semibold text-brand-navy sm:text-base">
             {siteConfig.name}
-          </a>
+          </Link>
           <div className="flex items-center gap-3">
             <Link href="/online-terapi" className="hidden text-sm font-medium text-slate-700 hover:text-brand-navy sm:inline-flex">
               Online Terapi
