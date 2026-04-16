@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { services } from "@/lib/services";
@@ -8,10 +9,16 @@ import { services } from "@/lib/services";
 const primaryLinks = [
   { href: "/", label: "Ana Sayfa" },
   { href: "/online-terapi", label: "Online Terapi" },
+  { href: "/psikolog-randevu", label: "Psikolog Randevu" },
 ];
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === "/psikolog-randevu") {
+    return null;
+  }
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur">

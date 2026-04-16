@@ -76,7 +76,7 @@ export function CiftEvlilikExtendedSections() {
         >
           İlişkiyi bir sistem olarak anlamak
         </h2>
-        <div className="mt-5 max-w-3xl space-y-4 text-lg leading-relaxed text-slate-800">
+        <div className="mt-5 max-w-3xl space-y-4 text-base leading-relaxed text-slate-800 md:text-lg">
           <p>
             Çift ve evlilik terapisinde sıkça vurgulanan sistem yaklaşımı şunu öne çıkarır: sorun yalnızca tarafların
             “kişilik kusurları”ndan ibaret değildir; iki kişi arasında kurulan etkileşimin yapısı, tekrarlayan
@@ -103,7 +103,7 @@ export function CiftEvlilikExtendedSections() {
         >
           Sık karşılaşılan ilişki dinamikleri
         </h2>
-        <p className="mt-3 max-w-3xl text-lg leading-relaxed text-slate-700">
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-700 md:text-lg">
           Aşağıdaki başlıklar klinik pratikte sık görülen temalara işaret eder; her çiftin hikâyesi farklı olsa da bu
           alanlarda çalışmak ilişkiyi güçlendirmeye yardımcı olabilir.
         </p>
@@ -116,8 +116,8 @@ export function CiftEvlilikExtendedSections() {
               <span className="inline-flex size-12 items-center justify-center rounded-xl bg-brand-sky/80 text-brand-navy">
                 <Icon className="size-8" />
               </span>
-              <h3 className="mt-4 font-display text-lg font-bold text-brand-navy">{title}</h3>
-              <p className="mt-2 flex-1 text-base leading-relaxed text-slate-700">{body}</p>
+              <h3 className="mt-4 font-display text-base font-bold text-brand-navy md:text-lg">{title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-700 md:text-base">{body}</p>
             </li>
           ))}
         </ul>
@@ -131,7 +131,7 @@ export function CiftEvlilikExtendedSections() {
           <h2 id="couple-mid-cta-heading" className="font-display text-xl font-bold text-brand-navy md:text-2xl">
             İlişkinizdeki döngüleri birlikte fark edelim
           </h2>
-          <p className="mt-3 text-lg leading-relaxed text-slate-800">
+          <p className="mt-3 text-base leading-relaxed text-slate-800 md:text-lg">
             Beşiktaş kliniğimizde veya online platformda seans oluşturmak için randevu alabilirsiniz.
           </p>
         </div>
@@ -164,7 +164,7 @@ export function CiftEvlilikExtendedSections() {
         >
           İlişki dinamikleri hakkında okuyabilecekleriniz
         </h2>
-        <p className="mt-3 max-w-3xl text-lg leading-relaxed text-slate-700">
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-slate-700 md:text-lg">
           Aşağıdaki bilgilendirici sayfalar, çift sürecinizi destekleyen psiko-eğitim okumaları sunar; tanı koymaz,
           yerine geçmez.
         </p>
