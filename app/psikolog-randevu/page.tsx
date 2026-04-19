@@ -3,20 +3,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
+import { OnlineTherapyBanner } from "@/components/sections/OnlineTherapyBanner";
 import { ContactMapEmbed } from "@/components/sections/ContactMapEmbed";
 import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
+import { TherapySchoolTabs } from "@/components/content/TherapySchoolTabs";
+import { psikologRandevuTherapyTabs } from "@/lib/psikolog-randevu-therapy-tabs";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Yüz Yüze ve Online Psikoterapi Desteği - Hemen Randevu Alın",
   description:
-    "Yüz yüze ve online psikoterapi desteği. Kaygı, depresyon ve ilişki sorunları için hızlı randevu oluşturun.",
+    "İstanbul psikolog ve online psikoterapi desteği. Kaygı, depresyon ve ilişki sorunları için Beşiktaş ofisi veya çevrim içi hızlı randevu.",
+  keywords: [
+    "İstanbul psikolog",
+    "online psikolog",
+    "psikolog randevu",
+    "Beşiktaş psikolog",
+    "online terapi",
+  ],
   alternates: { canonical: "/psikolog-randevu" },
   robots: { index: true, follow: true },
   openGraph: {
     title: `Yüz Yüze ve Online Psikoterapi Desteği - Hemen Randevu Alın | ${siteConfig.name}`,
     description:
-      "Google Ads kampanyaları için optimize edilmiş hızlı randevu sayfası. WhatsApp veya telefonla hemen iletişime geçin.",
+      "İstanbul psikolog ve online destek. Google Ads için hızlı randevu; WhatsApp veya telefonla iletişime geçin.",
     url: `${siteConfig.url}/psikolog-randevu`,
   },
 };
@@ -130,6 +140,82 @@ export default function PsikologRandevuPage() {
           <TestimonialsMarquee />
         </div>
 
+        <section
+          className="mt-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/90 to-white p-6 shadow-md md:p-8"
+          aria-labelledby="randevu-after-reviews-cta-heading"
+        >
+          <h2 id="randevu-after-reviews-cta-heading" className="font-display text-lg font-bold text-brand-navy md:text-xl">
+            Randevu Alın
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-slate-800 md:text-base">
+            Psikolog randevu sürecinizi WhatsApp üzerinden başlatabilir veya doğrudan arayarak uygun saat için hızlıca bilgi alabilirsiniz.
+          </p>
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            <a
+              id="ads-whatsapp-button-landing-after-reviews"
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ads-conversion="contact"
+              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white hover:brightness-95"
+            >
+              <WhatsAppIcon className="size-5" />
+              WhatsApp ile yazın
+            </a>
+            <a
+              id="ads-call-button-landing-after-reviews"
+              href={`tel:${siteConfig.phoneTel}`}
+              data-ads-conversion="contact"
+              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-brand-navy px-5 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
+            >
+              <Phone className="size-5" aria-hidden />
+              Hemen arayın
+            </a>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
+          <TherapySchoolTabs sectionLabel="Kullandığımız Yöntemler" tabs={psikologRandevuTherapyTabs} />
+        </section>
+
+        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+          <OnlineTherapyBanner />
+        </div>
+
+        <section
+          className="mt-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/90 to-white p-6 shadow-md md:p-8"
+          aria-labelledby="randevu-mid-cta-heading"
+        >
+          <h2 id="randevu-mid-cta-heading" className="font-display text-lg font-bold text-brand-navy md:text-xl">
+            Randevu için hemen iletişime geçin
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-slate-800 md:text-base">
+            İstanbul psikolog aramasıyla ulaştıysanız veya Türkiye genelinden online seans planlamak istiyorsanız; kısa bir mesajla uygun saatleri birlikte netleştirelim.
+          </p>
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            <a
+              id="ads-whatsapp-button-landing-mid-cta"
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ads-conversion="contact"
+              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white hover:brightness-95"
+            >
+              <WhatsAppIcon className="size-5" />
+              WhatsApp ile randevu
+            </a>
+            <a
+              id="ads-call-button-landing-mid-cta"
+              href={`tel:${siteConfig.phoneTel}`}
+              data-ads-conversion="contact"
+              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-brand-navy px-5 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
+            >
+              <Phone className="size-5" aria-hidden />
+              Telefonla randevu
+            </a>
+          </div>
+        </section>
+
         <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
           <h2 className="text-lg font-semibold text-brand-navy sm:text-xl">Çalışma Alanlarım</h2>
           <p className="mt-2 text-sm text-slate-700">Kısa, hedef odaklı ve bilimsel temelli destek:</p>
@@ -159,6 +245,11 @@ export default function PsikologRandevuPage() {
           </p>
           <p className="mt-2 text-sm text-slate-700 sm:text-base">
             Yüz yüze seanslar Beşiktaş&apos;taki ofiste, online seanslar tüm Türkiye&apos;den görüntülü olarak yapılmaktadır.
+            {" "}
+            <span className="text-slate-600">
+              İstanbul psikolog arayanlar için Avrupa yakası Beşiktaş merkezli erişim; şehir dışından da online psikolog
+              desteğiyle süreklilik sağlanabilir.
+            </span>
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <a
