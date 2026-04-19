@@ -6,7 +6,6 @@ export const psikologRandevuTherapyTabs: TherapyTabItem[] = [
     id: "birey-odakli",
     label: "Birey odaklı psikoterapi",
     paragraphs: [
-      "Uygulamada birey odaklı ilişkiyi omurga alır; gerektiğinde BDT becerileri ve psikodinamik çizgiler bu zeminde birleştirilir.",
       "Carl Rogers’ın geliştirdiği birey odaklı (danışan merkezli) yaklaşımda koşulsuz kabul, empatik anlayış ve tutarlılık terapötik ittifakın temelidir. Danışan, kendi deneyiminin uzmanı olarak kabul edilir.",
       "Bu çerçeve özellikle utanç, suçluluk ve “yetersizlik” temalarında güvenli bir tempo sunar; diğer teknikler bu zeminde daha etkili çalışır.",
     ],
