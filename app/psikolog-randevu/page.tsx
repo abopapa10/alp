@@ -3,48 +3,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
-import { OnlineTherapyBanner } from "@/components/sections/OnlineTherapyBanner";
 import { ContactMapEmbed } from "@/components/sections/ContactMapEmbed";
-import { TestimonialsMarquee } from "@/components/sections/TestimonialsMarquee";
-import { TherapySchoolTabs } from "@/components/content/TherapySchoolTabs";
-import { psikologRandevuTherapyTabs } from "@/lib/psikolog-randevu-therapy-tabs";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Yüz Yüze ve Online Psikoterapi Desteği - Hemen Randevu Alın",
+  title: "İstanbul'da Psikolog Randevu — WhatsApp'tan Hemen Başlayın",
   description:
-    "İstanbul psikolog ve online psikoterapi desteği. Kaygı, depresyon ve ilişki sorunları için Beşiktaş ofisi veya çevrim içi hızlı randevu.",
+    "Psikolog randevu, online terapi randevu ve İstanbul psikolog aramalarına özel hızlı randevu sayfası. WhatsApp'tan hemen yazın, saatinizi birlikte belirleyelim.",
   keywords: [
-    "İstanbul psikolog",
-    "online psikolog",
     "psikolog randevu",
-    "Beşiktaş psikolog",
-    "online terapi",
+    "online terapi randevu",
+    "istanbul psikolog",
+    "psikolog seans ücretleri",
+    "en iyi psikolog istanbul",
   ],
   alternates: { canonical: "/psikolog-randevu" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: `Yüz Yüze ve Online Psikoterapi Desteği - Hemen Randevu Alın | ${siteConfig.name}`,
+    title: `İstanbul'da Psikolog Randevu — WhatsApp'tan Hemen Başlayın | ${siteConfig.name}`,
     description:
-      "İstanbul psikolog ve online destek. Google Ads için hızlı randevu; WhatsApp veya telefonla iletişime geçin.",
+      "Yüksek niyetli psikolog randevu aramaları için hızlı, net ve güven veren randevu sayfası.",
     url: `${siteConfig.url}/psikolog-randevu`,
   },
 };
 
-const supportAreas = [
-  "Kaygı (anksiyete) ve panik atak",
-  "Depresif duygu durum ve motivasyon kaybı",
-  "İlişki, ayrılık ve iletişim sorunları",
-  "Stres yönetimi ve duygusal denge",
-  "Bireysel destek",
-  "Daha fazlası",
-];
-
-const trustPoints = [
-  "700+ danışan tecrübesi",
-  "Hacettepe Üniversitesi Psikoloji Bölümü",
-  "Tümüyle bilimsel yaklaşım",
-  "Samimi, dürüst ve güvenli hizmet",
+const trustBadges = ["700+ danışan deneyimi", "Gizlilik odaklı görüşme", "Yüz yüze ve online esnek seans"];
+const concerns = ["Kaygı ve panik belirtileri", "Depresif duygu durum", "İlişki ve iletişim sorunları"];
+const whyUs = [
+  "Randevu süreci net: ilk mesajdan sonra aynı gün dönüş hedefi",
+  "Süreç şeffaf: seans planı ve takip adımları baştan netleştirilir",
+  "İhtiyaca göre format: ofiste yüz yüze veya online terapi randevu",
 ];
 
 export default function PsikologRandevuPage() {
@@ -78,17 +66,15 @@ export default function PsikologRandevuPage() {
       </header>
 
       <main className="mx-auto flex max-w-5xl flex-col px-4 pb-28 pt-8 sm:pt-12 md:pb-12">
-        <section className="flex min-h-[58vh] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-8 text-center shadow-sm sm:px-8 sm:py-14">
-          <span className="inline-flex items-center rounded-full bg-brand-sky px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-navy">
-            İstanbul ve Online Seans
-          </span>
-          <h1 className="mt-4 text-balance font-display text-2xl font-bold leading-tight text-brand-navy sm:text-4xl">
-            Yüz Yüze ve Online Psikoterapi Desteği - Hemen Randevu Alın
+        <section className="rounded-2xl border border-slate-200 bg-white px-5 py-8 shadow-sm sm:px-8 sm:py-12">
+          <h1 className="text-balance font-display text-2xl font-bold leading-tight text-brand-navy sm:text-4xl">
+            İstanbul&apos;da Psikolog Randevu — Hemen Başlayın
           </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
-            İlk adımı ertelemeyin. Yüz yüze veya online formatta, size uygun terapi planını hızlıca birlikte oluşturalım.
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
+            Psikolog randevu veya online terapi randevu için tek adım yeterli: WhatsApp&apos;tan yazın, uygun saati hızlıca
+            belirleyelim.
           </p>
-          <div className="mt-7 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-6 flex flex-col gap-3 sm:max-w-xl sm:flex-row">
             <a
               id="ads-whatsapp-button-hero"
               href={siteConfig.whatsappUrl}
@@ -98,7 +84,7 @@ export default function PsikologRandevuPage() {
               className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white shadow-sm hover:brightness-95"
             >
               <WhatsAppIcon className="size-5" />
-              WhatsApp ile İletişime Geç
+              WhatsApp&apos;tan Hemen Randevu Al
             </a>
             <a
               id="ads-call-button-hero"
@@ -110,170 +96,178 @@ export default function PsikologRandevuPage() {
               Telefonla Ara
             </a>
           </div>
-        </section>
-
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <ul className="grid gap-3 text-sm text-slate-800 sm:grid-cols-2 sm:text-base">
-            {trustPoints.map((point) => (
-              <li key={point} className="flex items-start gap-2 rounded-lg border border-slate-100 bg-slate-50 px-3 py-2">
-                <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-emerald-600" aria-hidden />
-                <span>{point}</span>
+          <ul className="mt-5 grid gap-2 text-sm text-slate-800 sm:grid-cols-3">
+            {trustBadges.map((item) => (
+              <li key={item} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 font-medium">
+                {item}
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <div className="mx-auto max-w-[320px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-            <Image
-              src="/images/profil.webp"
-              alt={`${siteConfig.name} profil fotoğrafı`}
-              width={640}
-              height={800}
-              className="h-auto w-full object-cover"
-              sizes="(max-width: 768px) 85vw, 320px"
-            />
-          </div>
-        </section>
-
-        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-          <TestimonialsMarquee />
-        </div>
-
-        <section
-          className="mt-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/90 to-white p-6 shadow-md md:p-8"
-          aria-labelledby="randevu-after-reviews-cta-heading"
-        >
-          <h2 id="randevu-after-reviews-cta-heading" className="font-display text-lg font-bold text-brand-navy md:text-xl">
-            Randevu Alın
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm text-slate-800 md:text-base">
-            Psikolog randevu sürecinizi WhatsApp üzerinden başlatabilir veya doğrudan arayarak uygun saat için hızlıca bilgi alabilirsiniz.
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Psikolog randevu nasıl alınır?</h2>
+          <ul className="mt-3 space-y-2 text-sm text-slate-700 sm:text-base">
+            <li>- WhatsApp&apos;tan kısa bilgi mesajı bırakın.</li>
+            <li>- Online terapi randevu veya yüz yüze formatı seçin.</li>
+            <li>- Uygun saat onayı sonrası görüşmeye başlayın.</li>
+          </ul>
+          <h3 className="mt-5 text-base font-semibold text-brand-navy">Online terapi randevu süreci</h3>
+          <p className="mt-2 text-sm text-slate-700 sm:text-base">
+            Online görüşmeler için bağlantı bilgileri ve seans çerçevesi net biçimde paylaşılır. Süreç sade, hızlı ve takip
+            odaklı ilerler.
           </p>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-4">
             <a
-              id="ads-whatsapp-button-landing-after-reviews"
+              id="ads-whatsapp-button-intent-match"
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               data-ads-conversion="contact"
-              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white hover:brightness-95"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 text-sm font-bold text-white hover:brightness-95"
             >
               <WhatsAppIcon className="size-5" />
-              WhatsApp ile yazın
-            </a>
-            <a
-              id="ads-call-button-landing-after-reviews"
-              href={`tel:${siteConfig.phoneTel}`}
-              data-ads-conversion="contact"
-              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-brand-navy px-5 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
-            >
-              <Phone className="size-5" aria-hidden />
-              Hemen arayın
+              WhatsApp&apos;tan Hemen Randevu Al
             </a>
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <TherapySchoolTabs sectionLabel="Kullandığımız Yöntemler" tabs={psikologRandevuTherapyTabs} />
-        </section>
-
-        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
-          <OnlineTherapyBanner />
-        </div>
-
-        <section
-          className="mt-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/90 to-white p-6 shadow-md md:p-8"
-          aria-labelledby="randevu-mid-cta-heading"
-        >
-          <h2 id="randevu-mid-cta-heading" className="font-display text-lg font-bold text-brand-navy md:text-xl">
-            Randevu için hemen iletişime geçin
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm text-slate-800 md:text-base">
-            İstanbul psikolog aramasıyla ulaştıysanız veya Türkiye genelinden online seans planlamak istiyorsanız; kısa bir mesajla uygun saatleri birlikte netleştirelim.
-          </p>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            <a
-              id="ads-whatsapp-button-landing-mid-cta"
-              href={siteConfig.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-ads-conversion="contact"
-              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white hover:brightness-95"
-            >
-              <WhatsAppIcon className="size-5" />
-              WhatsApp ile randevu
-            </a>
-            <a
-              id="ads-call-button-landing-mid-cta"
-              href={`tel:${siteConfig.phoneTel}`}
-              data-ads-conversion="contact"
-              className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-brand-navy px-5 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
-            >
-              <Phone className="size-5" aria-hidden />
-              Telefonla randevu
-            </a>
-          </div>
-        </section>
-
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <h2 className="text-lg font-semibold text-brand-navy sm:text-xl">Çalışma Alanlarım</h2>
-          <p className="mt-2 text-sm text-slate-700">Kısa, hedef odaklı ve bilimsel temelli destek:</p>
-          <ul className="mt-4 space-y-2 text-sm text-slate-800 sm:text-base">
-            {supportAreas.map((area) => (
-              <li key={area} className="flex items-start gap-2">
-                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand-navy" aria-hidden />
-                {area === "Daha fazlası" ? (
-                  <Link href="/#hizmetler" className="font-medium text-brand-navy hover:underline">
-                    Daha fazlası
-                  </Link>
-                ) : (
-                  <span>{area}</span>
-                )}
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Hangi konularda destek alabilirsiniz?</h2>
+          <ul className="mt-3 space-y-2 text-sm text-slate-700 sm:text-base">
+            {concerns.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-600" aria-hidden />
+                <span>{item}</span>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8 sm:py-8">
-          <h2 className="text-lg font-semibold text-brand-navy sm:text-xl">Ofis Konum ve İletişim</h2>
-          <p className="mt-3 flex items-start gap-2 text-sm text-slate-700 sm:text-base">
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Süreç nasıl ilerler?</h2>
+          <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 1: WhatsApp&apos;tan yaz</h3>
+          <p className="mt-1 text-sm text-slate-700 sm:text-base">Kısa bilgi bırakın, aynı gün geri dönüş hedeflenir.</p>
+          <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 2: Saat belirle</h3>
+          <p className="mt-1 text-sm text-slate-700 sm:text-base">Yüz yüze veya online seans formatı netleştirilir.</p>
+          <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 3: Görüşmeye başla</h3>
+          <p className="mt-1 text-sm text-slate-700 sm:text-base">İlk seansla birlikte kişisel yol haritası oluşturulur.</p>
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <a
+              id="ads-whatsapp-button-process"
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ads-conversion="contact"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 text-sm font-bold text-white hover:brightness-95"
+            >
+              <WhatsAppIcon className="size-5" />
+              WhatsApp&apos;tan Hemen Randevu Al
+            </a>
+            <a
+              id="ads-call-button-process"
+              href={`tel:${siteConfig.phoneTel}`}
+              data-ads-conversion="contact"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-brand-navy px-4 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
+            >
+              <Phone className="size-5" aria-hidden />
+              Hemen Ara
+            </a>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Neden bu sayfadan randevu alıyorlar?</h2>
+          <ul className="mt-3 space-y-2 text-sm text-slate-700 sm:text-base">
+            {whyUs.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-600" aria-hidden />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-4">
+            <p className="text-sm text-slate-700">
+              <strong className="text-brand-navy">Sosyal kanıt:</strong> 700+ danışan deneyimi, düzenli takip sistemi ve
+              gizlilik ilkelerine uygun seans süreci.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Sık Sorulan Sorular</h2>
+          <details className="mt-3 rounded-lg border border-slate-200 p-4">
+            <summary className="cursor-pointer font-semibold text-brand-navy">Psikolog randevu nasıl alınır?</summary>
+            <p className="mt-2 text-sm text-slate-700 sm:text-base">
+              WhatsApp üzerinden kısa bir mesaj bırakmanız yeterli. Müsait saatler paylaşılıp randevunuz netleştirilir.
+            </p>
+          </details>
+          <details className="mt-3 rounded-lg border border-slate-200 p-4">
+            <summary className="cursor-pointer font-semibold text-brand-navy">Online terapi nasıl yapılır?</summary>
+            <p className="mt-2 text-sm text-slate-700 sm:text-base">
+              Güvenli bağlantı üzerinden görüntülü görüşme yapılır. Seans düzeni ve takip adımları ilk görüşmede açıklanır.
+            </p>
+          </details>
+          <details className="mt-3 rounded-lg border border-slate-200 p-4">
+            <summary className="cursor-pointer font-semibold text-brand-navy">Psikolog seans ücretleri nasıl belirlenir?</summary>
+            <p className="mt-2 text-sm text-slate-700 sm:text-base">
+              Seans ücreti süreç ve formata göre değişebilir. Güncel ücret aralığı bilgisi için WhatsApp&apos;tan yazabilirsiniz.
+            </p>
+          </details>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Ofis konumu ve iletişim</h2>
+          <p className="mt-2 flex items-start gap-2 text-sm text-slate-700 sm:text-base">
             <MapPin className="mt-0.5 size-5 shrink-0 text-brand-navy" aria-hidden />
             <span>
-              {siteConfig.address.street}, {siteConfig.address.city}
+              {siteConfig.address.street}, {siteConfig.address.city} — İstanbul psikolog aramalarında yüz yüze ve online
+              seçeneklerle hızlı randevu.
             </span>
           </p>
-          <p className="mt-2 text-sm text-slate-700 sm:text-base">
-            Yüz yüze seanslar Beşiktaş&apos;taki ofiste, online seanslar tüm Türkiye&apos;den görüntülü olarak yapılmaktadır.
-            {" "}
-            <span className="text-slate-600">
-              İstanbul psikolog arayanlar için Avrupa yakası Beşiktaş merkezli erişim; şehir dışından da online psikolog
-              desteğiyle süreklilik sağlanabilir.
-            </span>
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
+          <div className="mt-4 flex flex-wrap gap-3">
             <a
-              id="ads-call-button-contact"
-              href={`tel:${siteConfig.phoneTel}`}
-              data-ads-conversion="contact"
-              className="inline-flex min-h-11 items-center justify-center rounded-lg border border-brand-navy px-4 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
-            >
-              {siteConfig.phoneDisplay}
-            </a>
-            <a
-              id="ads-whatsapp-button-contact"
+              id="ads-whatsapp-button-final"
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               data-ads-conversion="contact"
-              className="inline-flex min-h-11 items-center justify-center rounded-lg bg-brand-accent px-4 text-sm font-semibold text-white hover:bg-brand-accent-hover"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 text-sm font-bold text-white hover:brightness-95"
             >
-              WhatsApp&apos;tan Yazın
+              <WhatsAppIcon className="size-5" />
+              WhatsApp&apos;tan Hemen Randevu Al
+            </a>
+            <a
+              id="ads-call-button-final"
+              href={`tel:${siteConfig.phoneTel}`}
+              data-ads-conversion="contact"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-brand-navy px-4 text-sm font-semibold text-brand-navy hover:bg-brand-sky"
+            >
+              <Phone className="size-5" aria-hidden />
+              Telefonla Ara
             </a>
           </div>
           <div className="mt-6">
             <ContactMapEmbed />
           </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-brand-sky/80 to-white p-6 shadow-md md:p-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Randevu için en hızlı yol: WhatsApp</h2>
+          <p className="mt-2 text-sm text-slate-700 md:text-base">
+            Karar vermek için uzun metinlere ihtiyacınız yok. WhatsApp&apos;tan yazın, randevunuzu bugün planlayalım.
+          </p>
+          <a
+            id="ads-whatsapp-button-urgent"
+            href={siteConfig.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ads-conversion="contact"
+            className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 text-sm font-bold text-white hover:brightness-95"
+          >
+            <WhatsAppIcon className="size-5" />
+            WhatsApp&apos;tan Hemen Randevu Al
+          </a>
         </section>
       </main>
 
