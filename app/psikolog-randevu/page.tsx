@@ -123,25 +123,19 @@ export default function PsikologRandevuPage() {
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
-          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Psikolog randevu nasıl alınır?</h2>
-          <ul className="mt-3 space-y-2 text-sm text-slate-700 sm:text-base">
-            <li>- WhatsApp&apos;tan kısa bilgi mesajı bırakın.</li>
-            <li>- Terapi formatı ve randevu ile ilgili bilgi alın.</li>
-            <li>- Uygun tarih ve saati belirleyip randevunuzu kesinleştirin.</li>
-          </ul>
-          <h3 className="mt-5 text-base font-semibold text-brand-navy">Hemen İletişime Geçin</h3>
-          <p className="mt-2 text-sm text-slate-700 sm:text-base">
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-7 sm:px-8 sm:py-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Hemen İletişime Geçin</h2>
+          <p className="mt-3 text-base leading-relaxed text-slate-700">
             Psikolog randevu ve bilgi almak istediğiniz konu hakkında anında dönüş alın.
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <a
               id="ads-whatsapp-button-intent-match"
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               data-ads-conversion="contact"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 text-sm font-bold text-white hover:brightness-95"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 text-sm font-bold text-white hover:brightness-95 sm:text-base"
             >
               <WhatsAppIcon className="size-5" />
               WhatsApp&apos;tan Hemen Randevu Al
@@ -150,7 +144,7 @@ export default function PsikologRandevuPage() {
           <p className="mt-2 text-xs text-slate-600">Ucretsiz on bilgi alabilirsiniz.</p>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-8 sm:px-8 sm:py-10">
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-9 sm:px-8 sm:py-11">
           <div className="flex justify-center">
             <Image
               src="/images/a. alparslan sancar logo.webp"
@@ -162,7 +156,7 @@ export default function PsikologRandevuPage() {
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-7 sm:px-8 sm:py-8">
           <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Hangi Konuda terapi alabilirsiniz?</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-700 sm:text-base">
             {concerns.map((item) => (
@@ -174,7 +168,7 @@ export default function PsikologRandevuPage() {
           </ul>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-7 sm:px-8 sm:py-8">
           <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Ofisimiz</h2>
           <div className="mt-4 flex snap-x gap-3 overflow-x-auto pb-2">
             <Image src="/images/ofis1.webp" alt="Ofis fotoğrafı 1" width={280} height={180} className="h-44 w-72 shrink-0 snap-start rounded-xl border border-slate-200 object-cover" />
@@ -184,22 +178,22 @@ export default function PsikologRandevuPage() {
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-7 sm:px-8 sm:py-8">
           <Image
             src="/images/psi logo.webp"
             alt="İşletme logosu"
             width={56}
             height={56}
-            className="mb-3 rounded-lg"
+            className="mx-auto mb-3 rounded-lg"
           />
-          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Randevu süreci (3 adım)</h2>
-          <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 1: WhatsApp&apos;tan yaz</h3>
+          <h2 className="text-center font-display text-xl font-bold text-brand-navy md:text-2xl">Randevu nasıl oluşturulur?</h2>
+          <h3 className="mt-4 text-base font-semibold text-brand-navy">Adım 1: WhatsApp&apos;tan yaz</h3>
           <p className="mt-1 text-sm text-slate-700 sm:text-base">Kısa bilgi bırakın, anında dönüş hedeflenir.</p>
           <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 2: Saat belirle</h3>
           <p className="mt-1 text-sm text-slate-700 sm:text-base">Yüz yüze veya online seans formatı netleştirilir.</p>
           <h3 className="mt-3 text-base font-semibold text-brand-navy">Adım 3: Görüşmeye başla</h3>
           <p className="mt-1 text-sm text-slate-700 sm:text-base">İlk seansla birlikte kişisel yol haritası oluşturulur.</p>
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
             <a
               id="ads-whatsapp-button-process"
               href={siteConfig.whatsappUrl}
@@ -224,8 +218,8 @@ export default function PsikologRandevuPage() {
           <p className="mt-2 text-xs text-slate-600">Ucretsiz on bilgi alabilirsiniz.</p>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-8">
-          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Neden ben?</h2>
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white px-5 py-7 sm:px-8 sm:py-8">
+          <h2 className="font-display text-xl font-bold text-brand-navy md:text-2xl">Hakkımda</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-[0.8fr_1.2fr] md:items-start">
             <div className="mx-auto w-full max-w-[260px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
               <Image
@@ -237,21 +231,25 @@ export default function PsikologRandevuPage() {
                 sizes="(max-width: 768px) 70vw, 260px"
               />
             </div>
-            <ul className="space-y-2 text-sm text-slate-700 sm:text-base">
-              <li>
+            <div className="space-y-4 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+              <p>
                 Ben Psk. A. Alparslan SANCAR. Bursa BTSO Sosyal Bilimler lisesi mezunu olarak, 2015 yılında <strong>Hacettepe
-                Üniversitesi Psikoloji Bölümü</strong>&apos; nü kazandım. Mezuniyetimden bugüne psikoterapi hizmeti vermekteyim. Şu anda
-                Beşiktaş, İstanbulda kendi ofisimde, terapi hizmeti vermekteyim. Bugüne kadar <strong>700&apos; ün üzerinde danışanla çalıştım</strong>{" "}
-                ve terapi içerisinde önemli başarılar gösterme fırsatı yakaladım. Terapi yöntemimi, yaratıcılığımı ve
-                zekamı ön plana çıkaracağını düşündüğüm, <strong>Birey Odaklı Psikoterapi</strong>{" "}(Danışan Merkezli Psikoterapi) tekniğine
-                evrilttim. Bununla birlikte <strong>BDT</strong> (Bilişsel Davranışçı Terapi) ve <strong>Psikodinamik</strong> Yaklaşımlı Terapi tekniklerini de
-                kullanmaktayım.
-              </li>
-            </ul>
+                Üniversitesi Psikoloji Bölümü</strong>&apos; nü kazandım. Mezuniyetimden bugüne psikoterapi hizmeti vermekteyim.
+              </p>
+              <p>
+                Şu anda Beşiktaş, İstanbulda kendi ofisimde terapi hizmeti vermekteyim. Bugüne kadar <strong>700&apos; ün üzerinde danışanla çalıştım</strong>{" "}
+                ve terapi içerisinde önemli başarılar gösterme fırsatı yakaladım.
+              </p>
+              <p>
+                Terapi yöntemimi, yaratıcılığımı ve zekamı ön plana çıkaracağını düşündüğüm <strong>Birey Odaklı Psikoterapi</strong>{" "}
+                (Danışan Merkezli Psikoterapi) tekniğine evrilttim. Bununla birlikte <strong>BDT</strong> (Bilişsel Davranışçı Terapi) ve{" "}
+                <strong>Psikodinamik</strong> Yaklaşımlı Terapi tekniklerini de kullanmaktayım.
+              </p>
+            </div>
           </div>
         </section>
 
-        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+        <div className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-white">
           <TestimonialsMarquee />
         </div>
 
