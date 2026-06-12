@@ -31,7 +31,7 @@ export function HeroSection() {
               id="hero-heading"
               className="mt-3 font-display text-[1.65rem] font-bold leading-snug tracking-tight text-brand-navy sm:text-3xl md:text-4xl md:leading-tight lg:text-[2.35rem]"
             >
-              {siteConfig.homeFullTitle}
+              {siteConfig.homeHeroTitle}
             </h1>
             <p className="mt-3 text-base font-medium text-brand-navy/90 sm:text-lg md:text-xl">
               {siteConfig.tagline}

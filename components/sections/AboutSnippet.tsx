@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Blend, CircleCheck, MapPin } from "lucide-react";
 
 const aboutMain =
-  "Hacettepe Üniversitesi Psikoloji bölümü mezunu bir psikolog olarak, bugüne kadar 700'den fazla danışanla çalışma fırsatı buldum. Birey Odaklı Psikoterapi (Danışan Merkezli Psikoterapi) tekniği kullanıyorum. Beşiktaş'taki kliniğimde ve online platformlarda, bilimsel temelli ve kişiye özel terapi süreçleri yürütüyorum.";
+  "Hacettepe Üniversitesi Psikoloji bölümü mezunu bir psikolog olarak, mezuniyetimden sonra Birey Odaklı Psikoterapi (Danışan Merkezli Psikoterapi) tekniğinde uzmanlaştım. Bugüne kadar 700'den fazla danışanla çalışma fırsatı buldum. 2023 yılında Bursa Nilüfer'de ilk kliniğimi açtım; 2025'ten bu yana İstanbul Beşiktaş'ta yüz yüze ve online platformlarda bilimsel temelli, kişiye özel terapi süreçleri yürütüyorum.";
 
 const highlights = [
   {
@@ -18,7 +18,7 @@ const highlights = [
   {
     icon: MapPin,
     title: "Lokasyon / hizmet",
-    text: "Beşiktaş'ta yüz yüze terapi ve tüm dünyaya yönelik online danışmanlık hizmeti.",
+    text: "2023'te Bursa Nilüfer'deki ilk kliniğimden bu yana; 2025'ten itibaren Beşiktaş'ta yüz yüze terapi ve online danışmanlık.",
   },
 ] as const;
 

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { HomeTrustBadges } from "@/components/sections/HomeTrustBadges";
+import { HomeProfilePhoto } from "@/components/sections/HomeProfilePhoto";
 import { AboutSnippet } from "@/components/sections/AboutSnippet";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { OnlineTherapyBanner } from "@/components/sections/OnlineTherapyBanner";
@@ -70,10 +72,12 @@ export default function HomePage() {
       <LocalBusinessJsonLd />
       <PsychologistJsonLd />
       <HeroSection />
-      <ServicesGrid items={homeServices} id="hizmetler" />
+      <HomeTrustBadges />
+      <HomeProfilePhoto />
       <AboutSnippet />
       <TestimonialsMarquee />
       <OnlineTherapyBanner />
+      <ServicesGrid items={homeServices} id="hizmetler" />
       <HomeEnrichedPsychologySection />
       <FAQAccordion />
       <HomeBlogTeaser />

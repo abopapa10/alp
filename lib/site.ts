@@ -5,8 +5,10 @@ export const siteConfig = {
   name: "Psk. Ahmet Alparslan Sancar",
   /** Ana sayfa hero H1 ile uyumlu kısa tanım (şema / iç tutarlılık). */
   tagline: "Psikoterapi & Online Danışmanlık",
-  /** Ana sayfa <title>, OG ve hero H1 — şablon uygulanmaz (absolute). */
+  /** Ana sayfa <title>, OG — şablon uygulanmaz (absolute). */
   homeFullTitle: "Yüz Yüze & Online Psikolog Randevu - Psk. Ahmet Alparslan Sancar",
+  /** Ana sayfa hero H1. */
+  homeHeroTitle: "Beşiktaş Psikolog A. Alparslan Sancar",
   titleTemplate: "%s | Psk. Ahmet Alparslan Sancar",
   description:
     "Beşiktaş psikolog ve İstanbul psikolog arayanlar için online terapi, online psikolojik danışmanlık ve yüz yüze seans. Psikolog randevu, psikologdan randevu ve psikoloji İstanbul çapında kanıta dayalı terapi: Hacettepe mezunu Psk. Ahmet Alparslan Sancar.",
