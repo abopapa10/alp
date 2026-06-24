@@ -73,9 +73,9 @@ export default function HomePage() {
       <PsychologistJsonLd />
       <HeroSection />
       <HomeTrustBadges />
+      <TestimonialsMarquee />
       <HomeProfilePhoto />
       <AboutSnippet />
-      <TestimonialsMarquee />
       <OnlineTherapyBanner />
       <ServicesGrid items={homeServices} id="hizmetler" />
       <HomeEnrichedPsychologySection />

@@ -16,7 +16,40 @@ function initialFromName(name: string) {
 
 const MIN_CHARS_FOR_TOGGLE = 130;
 
-function ReviewCard({ r }: { r: (typeof googleReviews)[number] }) {
+type ReviewLabels = {
+  readMore: string;
+  readLess: string;
+  googleTag: string;
+};
+
+const turkishReviewLabels: ReviewLabels = {
+  readMore: "Devamını oku",
+  readLess: "Daha az göster",
+  googleTag: "Google · kullanıcı yorumu",
+};
+
+const englishReviewLabels: ReviewLabels = {
+  readMore: "Read more",
+  readLess: "Show less",
+  googleTag: "Google · client review",
+};
+
+function expandAriaFor(name: string, expanded: boolean, locale: "tr" | "en") {
+  if (locale === "en") {
+    return expanded ? `Collapse review by ${name}` : `Expand full review by ${name}`;
+  }
+  return expanded ? `${name} yorumunu kısalt` : `${name} yorumunun tamamını göster`;
+}
+
+function ReviewCard({
+  r,
+  labels,
+  locale,
+}: {
+  r: (typeof googleReviews)[number];
+  labels: ReviewLabels;
+  locale: "tr" | "en";
+}) {
   const [open, setOpen] = useState(false);
   const needsToggle = r.text.length > MIN_CHARS_FOR_TOGGLE;
 
@@ -58,17 +91,17 @@ function ReviewCard({ r }: { r: (typeof googleReviews)[number] }) {
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
-              aria-label={open ? `${r.name} yorumunu kısalt` : `${r.name} yorumunun tamamını göster`}
+              aria-label={expandAriaFor(r.name, open, locale)}
               data-ads-review-conversion={open ? undefined : "true"}
               className="mt-2 self-start text-left text-sm font-semibold text-brand-navy hover:text-brand-accent hover:underline"
             >
-              {open ? "Daha az göster" : "Devamını oku"}
+              {open ? labels.readLess : labels.readMore}
             </button>
           )}
         </div>
 
         <p className="mt-auto pt-3 text-[11px] font-medium uppercase tracking-wide text-slate-800">
-          Google · kullanıcı yorumu
+          {labels.googleTag}
         </p>
       </div>
     </article>
@@ -78,12 +111,31 @@ function ReviewCard({ r }: { r: (typeof googleReviews)[number] }) {
 type Props = {
   showGoogleReviewsLink?: boolean;
   googleReviewsUrl?: string;
+  reviews?: (typeof googleReviews)[number][];
+  heading?: string;
+  description?: string;
+  listAriaLabel?: string;
+  linkAriaLabel?: string;
+  linkText?: string;
+  locale?: "tr" | "en";
+  reviewLabels?: Partial<ReviewLabels>;
 };
 
 export function TestimonialsMarquee({
   showGoogleReviewsLink = true,
   googleReviewsUrl = siteConfig.googleBusinessProfileUrl,
+  reviews = googleReviews,
+  heading = "Google yorumları",
+  description = "Danışanlarımızın Google'da bıraktığı gerçek değerlendirmeler. Kartları yatay kaydırarak okuyabilirsiniz.",
+  listAriaLabel = "Kaydırılabilir Google yorumları",
+  linkAriaLabel = "Google işletme profilindeki tüm yorumları yeni sekmede aç",
+  linkText = "Google'daki tüm yorumları oku",
+  locale = "tr",
+  reviewLabels,
 }: Props) {
+  const baseLabels = locale === "en" ? englishReviewLabels : turkishReviewLabels;
+  const labels: ReviewLabels = { ...baseLabels, ...reviewLabels };
+
   return (
     <section className="bg-slate-50 py-12 md:py-20" aria-labelledby="reviews-heading">
       <div className="mx-auto max-w-6xl px-6 md:px-4">
@@ -93,22 +145,19 @@ export function TestimonialsMarquee({
             id="reviews-heading"
             className="font-display text-2xl font-bold text-brand-navy md:text-3xl"
           >
-            Google yorumları
+            {heading}
           </h2>
         </div>
-        <p className="mt-2 text-slate-800">
-          Danışanlarımızın Google&apos;da bıraktığı gerçek değerlendirmeler. Kartları yatay kaydırarak
-          okuyabilirsiniz.
-        </p>
+        <p className="mt-2 text-slate-800">{description}</p>
       </div>
 
       <div
         className="relative mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-pl-6 px-6 pb-4 pt-1 [scrollbar-width:thin] md:scroll-pl-4 md:px-4"
         role="list"
-        aria-label="Kaydırılabilir Google yorumları"
+        aria-label={listAriaLabel}
       >
-        {googleReviews.map((r, idx) => (
-          <ReviewCard key={`${r.name}-${r.time}-${idx}`} r={r} />
+        {reviews.map((r, idx) => (
+          <ReviewCard key={`${r.name}-${r.time}-${idx}`} r={r} labels={labels} locale={locale} />
         ))}
       </div>
 
@@ -119,11 +168,11 @@ export function TestimonialsMarquee({
             target="_blank"
             rel="noopener noreferrer"
             data-ads-review-conversion="true"
-            aria-label="Google işletme profilindeki tüm yorumları yeni sekmede aç"
+            aria-label={linkAriaLabel}
             className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-lg border-2 border-brand-navy bg-white px-6 py-3 text-sm font-semibold text-brand-navy shadow-sm transition-colors hover:bg-brand-sky"
           >
             <GoogleGLogo className={G_PX} />
-            Google&apos;daki tüm yorumları oku
+            {linkText}
           </Link>
         </div>
       )}
