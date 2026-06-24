@@ -68,6 +68,13 @@ export function Header() {
           >
             İletişim
           </Link>
+          <Link
+            href="/english-speaking-psychologist-istanbul"
+            hrefLang="en"
+            className="text-sm font-medium text-slate-700 hover:text-brand-navy"
+          >
+            English
+          </Link>
         </nav>
         <button
           type="button"
@@ -127,6 +134,16 @@ export function Header() {
                 onClick={() => setOpen(false)}
               >
                 İletişim
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/english-speaking-psychologist-istanbul"
+                hrefLang="en"
+                className="block rounded-md px-3 py-2 text-sm font-medium text-slate-800 hover:bg-brand-sky"
+                onClick={() => setOpen(false)}
+              >
+                English
               </Link>
             </li>
           </ul>
